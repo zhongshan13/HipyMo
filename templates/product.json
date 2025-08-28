@@ -1,0 +1,498 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product-template": {
+      "type": "product-template",
+      "blocks": {
+        "badges": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_liquid_NaF6ay": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<hr/>"
+          }
+        },
+        "options": {
+          "type": "options",
+          "settings": {
+            "show_labels": true,
+            "show_icon": "Configuration",
+            "show_size_guide": true,
+            "variant_picker": "radio",
+            "size_guide_option_name": "Size",
+            "size_guide_tab_general_name": "Dimensions",
+            "size_guide_tab_model_name": "Parameters of the model in the photo",
+            "size_guide_title": "Size guide",
+            "size_guide_text": "Size Guide"
+          }
+        },
+        "custom_liquid_yinLBk": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<hr/>"
+          }
+        },
+        "custom_field": {
+          "type": "custom_field",
+          "disabled": true,
+          "settings": {
+            "field_label": "Your best wishes",
+            "required_text": ""
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {
+            "inv_low_stock_text": "Low stock",
+            "inv_high_stock_text": "In stock, ready to ship",
+            "low_stock_threshold": 10,
+            "show_inventory_quantity": true,
+            "text_color": "#2c2a28",
+            "low_stock_color": "#f5b231",
+            "high_stock_color": "#81b154",
+            "show_background": true,
+            "background_color": "#ffffff",
+            "background_opacity": 35
+          }
+        },
+        "fold_JTqAj8": {
+          "type": "fold",
+          "settings": {
+            "title": "Description",
+            "text": "<p>{{ product.metafields.custom.description | metafield_tag }}</p>"
+          }
+        },
+        "fold_H8EMrM": {
+          "type": "fold",
+          "settings": {
+            "title": "Description",
+            "text": "<p>{{ product.metafields.custom.description | metafield_tag }}</p>"
+          }
+        },
+        "quantity": {
+          "type": "quantity",
+          "settings": {
+            "show_label": true
+          }
+        },
+        "sales_point_1": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "sales_point_text": "Worldwide shipping"
+          }
+        },
+        "sales_point_2": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "sales_point_text": "Unic design"
+          }
+        },
+        "sales_point_3": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "sales_point_text": "Made with LOVE"
+          }
+        },
+        "notify_me": {
+          "type": "notify_me",
+          "disabled": true,
+          "settings": {
+            "notify_me_button_label": "Email me when available",
+            "notify_me_form_heading": "Notified by email when this product becomes available",
+            "notify_me_form_email_placeholder": "Your email",
+            "notify_me_form_submit_button_label": "Notify me when available",
+            "notify_me_form_success_message": "Email has been successfully sent"
+          }
+        },
+        "ask_question": {
+          "type": "ask_question",
+          "disabled": true,
+          "settings": {
+            "button_label": "Ask a question",
+            "heading": "Have a question?",
+            "email_placeholder": "Email*",
+            "name_placeholder": "Name*",
+            "phone_placeholder": "Phone",
+            "product_url": "Reference URL*",
+            "message_placeholder": "Write message*",
+            "success_message": "Email has been successfully sent",
+            "submit_button_label": "Submit"
+          }
+        },
+        "add_to_cart": {
+          "type": "add_to_cart",
+          "settings": {
+            "button_type": "secondary",
+            "show_additional_buttons": true,
+            "show_enabled_payment_types": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "disabled": true,
+          "settings": {}
+        },
+        "description_rf9Vg9": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "drawers": {
+          "type": "drawers",
+          "settings": {
+            "show_description": false,
+            "description_toggle_text": "DESCRIPTION",
+            "description_drawer_title": "Description",
+            "shipping_and_returns": "",
+            "shipping_and_returns_toggle_text": "SHIPPING & RETURNS",
+            "shipping_and_returns_drawer_title": "Shipping and returns",
+            "custom_drawer_title_1": "Drawer heading",
+            "custom_drawer_text_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "badges",
+        "vendor",
+        "title",
+        "price",
+        "custom_liquid_NaF6ay",
+        "options",
+        "custom_liquid_yinLBk",
+        "custom_field",
+        "inventory_status",
+        "fold_JTqAj8",
+        "fold_H8EMrM",
+        "quantity",
+        "sales_point_1",
+        "sales_point_2",
+        "sales_point_3",
+        "notify_me",
+        "ask_question",
+        "add_to_cart",
+        "pickup_availability",
+        "description_rf9Vg9",
+        "drawers"
+      ],
+      "settings": {
+        "is_lazy": true,
+        "is_zoom_enabled": true,
+        "show_borders": false,
+        "show_arrows_mobile": true,
+        "media_layout": "carousel",
+        "thumbnails_position": "bottom",
+        "media_height": "full_size",
+        "stacked_smooth_scroll": true,
+        "is_enable_media_scroller": false,
+        "show_taxes_included": true,
+        "show_pay_installments": true,
+        "show_share_buttons": false,
+        "show_sticky_add_to_cart": false,
+        "border_color": "#e6e6e6",
+        "ui_button_color": "#000000",
+        "ui_button_background_color": "#ffffff",
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 50,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 32
+      }
+    },
+    "ante_specifications_ThmKkd": {
+      "type": "ante-specifications",
+      "name": "Ante Specifications",
+      "settings": {
+        "text_alignment": "left",
+        "heading": "",
+        "subheading": "",
+        "text_content": "",
+        "button_label": "",
+        "button_aria_label": "",
+        "button_url": "/",
+        "button_style": "primary",
+        "image_picker": "shopify://shop_images/20250821-182513.png",
+        "show_images": true,
+        "spe_title": "Product Dimensions",
+        "spe_text": "<ul><li>GENERAL DIMENSIONS,85\"L×74\"W×75.25H</li><li>CAPACITY,900 Ibs</li><li>-----</li><li>GENERAL DIMENSIONS,95\"L×84\"W×95.25H</li><li>CAPACITY,700 Ibs</li><li>-----</li><li>GENERAL DIMENSIONS,75\"L×74\"W×48.25H</li><li>CAPACITY,1000 Ibs</li><li>-----</li><li>GENERAL DIMENSIONS,65\"L×44\"W×89.25H</li><li>CAPACITY,600 Ibs</li></ul>",
+        "is_show_border_top": false,
+        "is_show_border_bottom": false,
+        "border_color": "#e6e6e6",
+        "full_width": true,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "ante_configuration_CpiVdc": {
+      "type": "ante-configuration",
+      "blocks": {
+        "block_ELVidx": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/20250821-182513.png",
+            "icon": "shopify://shop_images/20250821-163138.png"
+          }
+        },
+        "block_Q3kkkD": {
+          "type": "block",
+          "settings": {}
+        },
+        "block_GNxxHg": {
+          "type": "block",
+          "settings": {}
+        },
+        "block_QURfV7": {
+          "type": "block",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "block_ELVidx",
+        "block_Q3kkkD",
+        "block_GNxxHg",
+        "block_QURfV7"
+      ],
+      "name": "Ante Configuration",
+      "settings": {
+        "text_alignment": "left",
+        "heading": "",
+        "subheading": "",
+        "text_content": "",
+        "button_label": "",
+        "button_aria_label": "",
+        "button_url": "/",
+        "button_style": "primary",
+        "is_show_border_top": false,
+        "is_show_border_bottom": false,
+        "border_color": "#e6e6e6",
+        "bg_color": "#eeeeee",
+        "full_width": false,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "images-row": {
+      "type": "images-row",
+      "blocks": {
+        "image_row_1": {
+          "type": "row_image",
+          "settings": {}
+        },
+        "image_row_2": {
+          "type": "row_image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_row_1",
+        "image_row_2"
+      ],
+      "disabled": true,
+      "settings": {
+        "is_lazy": true,
+        "full_width": true,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 50,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 25
+      }
+    },
+    "image-with-text_1": {
+      "type": "image-with-text",
+      "settings": {
+        "image_position": "left",
+        "text_alignment": "left",
+        "first_desktop_image": "shopify://shop_images/20250822-170723.png",
+        "first_mobile_image": "shopify://shop_images/20250822-170723.png",
+        "heading": "About the bags",
+        "subheading": "",
+        "text_content": "<p>The name Rains celebrates the basic element to which Rains products are designed to protect the wearer from: rain. </p>",
+        "button_label": "",
+        "button_aria_label": "",
+        "button_url": "/",
+        "button_style": "primary",
+        "is_show_border_top": false,
+        "is_enable_animation_line": true,
+        "is_show_border_bottom": false,
+        "border_color": "#e6e6e6",
+        "full_width": true,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "image-with-text_2": {
+      "type": "image-with-text",
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "left",
+        "first_desktop_image": "shopify://shop_images/20250822-170728.png",
+        "first_mobile_image": "shopify://shop_images/20250822-170728.png",
+        "heading": "About the bags",
+        "subheading": "",
+        "text_content": "<p>The name Rains celebrates the basic element to which Rains products are designed to protect the wearer from: rain. </p>",
+        "button_label": "",
+        "button_aria_label": "",
+        "button_url": "/",
+        "button_style": "primary",
+        "is_show_border_top": false,
+        "is_enable_animation_line": true,
+        "is_show_border_bottom": false,
+        "border_color": "#e6e6e6",
+        "full_width": true,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 40
+      }
+    },
+    "image_with_text_eN43EN": {
+      "type": "image-with-text",
+      "settings": {
+        "image_position": "left",
+        "text_alignment": "left",
+        "first_desktop_image": "shopify://shop_images/20250822-170736.png",
+        "first_mobile_image": "shopify://shop_images/20250822-170736.png",
+        "heading": "About the bags",
+        "subheading": "",
+        "text_content": "<p>The name Rains celebrates the basic element to which Rains products are designed to protect the wearer from: rain. </p>",
+        "button_label": "",
+        "button_aria_label": "",
+        "button_url": "/",
+        "button_style": "primary",
+        "is_show_border_top": false,
+        "is_enable_animation_line": true,
+        "is_show_border_bottom": false,
+        "border_color": "#e6e6e6",
+        "full_width": true,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "enable_shopify_recommendations": false,
+        "collection": "",
+        "heading": "YOU WATCHED BEFORE",
+        "products_to_show": 4,
+        "show_recently_viewed": true,
+        "recently_viewed_label": "Recently viewed",
+        "recently_viewed_limit": 4,
+        "layout": "alternative",
+        "enable_cards_indent": false,
+        "full_width": true,
+        "offset_top_desktop": 70,
+        "offset_bottom_desktop": 50,
+        "offset_top_mobile": 50,
+        "offset_bottom_mobile": 50
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "if_laout": true,
+        "layout": "two_column",
+        "heading": "Newsletter",
+        "subheading": "SubheadingThe Latest products & Offers",
+        "success_message": "Thanks for subscribing",
+        "text": "<p>Be the first to know about new collections and exclusive offers</p>",
+        "image_position": "left",
+        "email_placeholder": "Your email",
+        "button_aria_label": "Submit",
+        "section_background": "#fafafa",
+        "heading_color": "#757575",
+        "text_color": "#151515",
+        "content_color": "#c1bdb9",
+        "input_label_color": "#c1bdb9",
+        "input_color": "#151515",
+        "input_border_color": "#c4c4c4",
+        "button_circle_text_color": "#f9f5f0",
+        "button_circle_background_color": "rgba(0,0,0,0)",
+        "button_circle_border_color": "#f9f5f0",
+        "button_circle_outer_border_color": "#8b8885",
+        "button_circle_text_color_hover": "#2c2a28",
+        "button_circle_background_color_hover": "#eab88c",
+        "button_circle_border_color_hover": "#eab88c",
+        "button_circle_outer_border_color_hover": "#8b8885",
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 50,
+        "offset_bottom_mobile": 0
+      }
+    },
+    "ante_like_template_dgaQk3": {
+      "type": "ante-like-template",
+      "name": "Ante Like",
+      "settings": {
+        "text_alignment": "center",
+        "heading": "YOU MAY ASLO LIKE",
+        "subheading": "",
+        "text_content": "",
+        "button_label": "",
+        "button_aria_label": "",
+        "button_url": "/",
+        "button_style": "primary",
+        "is_show_border_top": false,
+        "is_show_border_bottom": false,
+        "border_color": "#e6e6e6",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 50,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 60
+      }
+    }
+  },
+  "order": [
+    "product-template",
+    "ante_specifications_ThmKkd",
+    "ante_configuration_CpiVdc",
+    "images-row",
+    "image-with-text_1",
+    "image-with-text_2",
+    "image_with_text_eN43EN",
+    "product-recommendations",
+    "newsletter",
+    "ante_like_template_dgaQk3"
+  ]
+}

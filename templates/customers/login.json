@@ -1,0 +1,28 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "login": {
+      "type": "login-template",
+      "settings": {
+        "label": "",
+        "desktop_image": "shopify://shop_images/FUhaoduo0164_86d38542-d1a0-440c-a232-85cf71bd517e.webp",
+        "mobile_image": "shopify://shop_images/FUhaoduo0166_2bfb2714-06dd-4e20-a98e-f38c8018b1b3.webp",
+        "offset_top_desktop": 60,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 30,
+        "offset_bottom_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "login"
+  ]
+}

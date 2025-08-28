@@ -1,0 +1,360 @@
+{%- comment -%}
+  ------------------------------------------------------------------------------
+  	Section: Image with text
+  ------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- assign text_alignment = section.settings.text_alignment -%}
+{%- assign heading = section.settings.heading -%}
+{%- assign subheading = section.settings.subheading -%}
+{%- assign text_content = section.settings.text_content -%}
+{%- assign button_label = section.settings.button_label -%}
+{%- assign button_aria_label = section.settings.button_aria_label -%}
+{%- assign button_url = section.settings.button_url -%}
+{%- assign button_style = section.settings.button_style -%}
+{%- assign is_show_border_top = section.settings.is_show_border_top -%}
+{%- assign is_show_border_bottom = section.settings.is_show_border_bottom -%}
+{%- assign border_color = section.settings.border_color -%}
+{%- assign full_width = section.settings.full_width -%}
+<style>
+  .ante-Template .ante-template {
+    text-align: var(--text-alignment);
+  }
+  .ante-temp .ante-temp__heading + .ante-temp__subheading {
+    margin-top: 20px;
+  }
+  .ante-temp .ante-tmp__button {
+    margin-top: 30px;
+  }
+  .ante-like .ante-content {
+    margin-top: 50px;
+  }
+  .ante-like .swiper-button-next,
+  .ante-like .swiper-button-prev {
+    width: 44px;
+    height: 44px;
+    background: #ab9b81;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+    transform: scale(1);
+  }
+
+  .ante-like .swiper-button-next svg,
+  .ante-like .swiper-button-prev svg {
+    width: unset;
+    height: unset;
+  }
+
+  .ante-like .swiper-button-prev::after,
+  .ante-like .swiper-button-next::after {
+    content: unset;
+  }
+  @media (min-width: 768px) {
+    .ante-temp .ante-temp__heading + .ante-temp__subheading {
+      margin-top: 30px;
+    }
+    .ante-temp .ante-tmp__button {
+      margin-top: 50px;
+    }
+
+    .ante-like .swiper-button-next:hover,
+    .ante-like .swiper-button-prev:hover {
+      transform: scale(1.2);
+    }
+  }
+</style>
+{%- capture section_styles -%}
+	--text-alignment: {{ text_alignment | replace: "left", "start" | replace: "right", "end" }};
+	--border-top-value: {% if is_show_border_top %}1px solid {{ border_color }} {% else %}none{% endif %};
+	--border-bottom-value: {% if is_show_border_bottom %}1px solid {{ border_color }} {% else %}none{% endif %};
+{%- endcapture -%}
+
+{% capture button %}
+	{%- if button_label != blank and button_url != blank -%}
+		<a
+			href="{{- button_url -}}"
+			{%- if button_aria_label != blank -%}aria-label="{{- button_aria_label | escape -}}"{%- endif -%}
+			class="{% if button_style == 'circle' and settings.design == 'alternate' %}button-circle{% endif %} ante-tmp__button {% if settings.design == 'alternate' %}button-new{% else %}button{% endif %} button--{% if button_style == 'circle' and settings.design == 'standard' %}primary{% else %}{{- button_style -}}{% endif %}">
+			<span class="button__text {{ design }}">
+				{{- button_label -}}
+			</span>
+
+			{% if button_style == 'circle' and settings.design == 'alternate' %}
+				<span class="button-new__icon-container">
+					<span class="button-new__icon-wrapper">
+						{% render "icons-new", icon: "wave" %}
+					</span>
+				</span>
+			{% endif %}
+		</a>
+	{%- endif -%}
+{% endcapture %}
+
+{%- capture content -%}
+	<div class="ante-temp">
+		<div class="ante-temp-content">
+			{%- if heading != blank -%}
+				<h2 class="h2 ante-temp__heading">
+					{{- heading -}}
+				</h2>
+			{%- endif -%}
+
+			{% if subheading != blank %}
+				<p class="ante-temp__subheading">{{ subheading }}</p>
+			{% endif %}
+
+			{%- if text_content != blank -%}
+				<div class="ante-temp__text-content section-rte">
+					{{- text_content -}}
+				</div>
+			{%- endif -%}
+
+			{{ button }}
+		</div>
+	</div>
+{%- endcapture -%}
+
+{%- style -%}
+  #shopify-section-{{- section.id -}} {
+  	padding-top: {{- section.settings.offset_top_mobile -}}px;
+  	padding-bottom: {{- section.settings.offset_bottom_mobile -}}px;
+  }
+
+  @media screen and (min-width: 992px) {
+  	#shopify-section-{{- section.id -}} {
+  		padding-top: {{- section.settings.offset_top_desktop -}}px;
+  		padding-bottom: {{- section.settings.offset_bottom_desktop -}}px;
+  	}
+  }
+{%- endstyle -%}
+
+{% assign is_lazy = true %}
+
+{% if section.index == 1 %}
+  {% assign is_lazy = false %}
+{% endif %}
+
+<section
+  class="ante-Template ante-like js-animate{% if request.visual_preview_mode or section.index == 1 %} animated{% endif %}"
+  style="{{ section_styles }}"
+>
+  <div
+    class="container ante-template {% if full_width == false %}page-width{% endif %}"
+  >
+    <div class="ante-header">
+      {{- content -}}
+    </div>
+    <div class="ante-content">
+      <ante-like>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            {%- for product_link in product.collections.first.products -%}
+              {%- if product_link.id != product.id -%}
+                <div class="swiper-slide">
+                  {% render 'product-card', product: product_link %}
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-button-next">
+              <svg
+                t="1753954264912"
+                class="icon"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                p-id="1470"
+                width="24"
+                height="24"
+              >
+                <path d="M758.528 512L384 886.528l-60.330667-60.330667 313.984-314.453333-310.954666-310.912L386.986667 140.501333z" fill="#fff" p-id="1471"></path>
+              </svg>
+            </div>
+            <div class="swiper-button-prev">
+              <svg
+                t="1753954517804"
+                class="icon"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                p-id="6126"
+                width="24"
+                height="24"
+              >
+                <path d="M259.621992 511.51086 338.343915 432.78996 338.5189 432.983365 707.532325 63.96994 764.376984 120.815623 409.900647 511.696078 764.376984 902.576533 707.532325 959.421192 338.5189 590.407768 338.343915 590.601172 259.621992 511.880273 259.806187 511.695055Z" fill="#fff" p-id="6127"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </ante-like>
+    </div>
+  </div>
+</section>
+
+{%- schema -%}
+{
+  "name": "Ante Like",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "id": "text_alignment",
+      "type": "select",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "id": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "id": "subheading",
+      "type": "textarea",
+      "label": "Subheading"
+    },
+    {
+      "id": "text_content",
+      "type": "richtext",
+      "label": "Text"
+    },
+    {
+      "id": "button_label",
+      "type": "text",
+      "label": "Button label"
+    },
+    {
+      "id": "button_aria_label",
+      "type": "text",
+      "label": "Button aria-label",
+      "info": "Need for good accessibility, e.g. 'All news about...'. [Learn more](https://utdweb.team/shopify-themes/gain/manual#section-image-with-text)"
+    },
+    {
+      "id": "button_url",
+      "type": "url",
+      "label": "Button link"
+    },
+    {
+      "id": "button_style",
+      "type": "select",
+      "label": "Button style",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "circle",
+          "label": "Circle"
+        }
+      ],
+      "info": "Circle button appears with an alternate design",
+      "default": "primary"
+    },
+    {
+      "id": "is_show_border_top",
+      "type": "checkbox",
+      "label": "Show border-top",
+      "default": false,
+      "info": "Only desktop and works with a standard design"
+    },
+    {
+      "id": "is_show_border_bottom",
+      "type": "checkbox",
+      "label": "Show border-bottom",
+      "default": false,
+      "info": "Only desktop and works with a standard design"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e6e6e6"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Make full width",
+      "default": true,
+      "info": "If unchecked - container width will be set based on the group 'Layout' settings in the Theme settings."
+    },
+    {
+      "type": "range",
+      "id": "offset_top_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Desktop offset top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "offset_bottom_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Desktop offset bottom",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "offset_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile offset top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "offset_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile offset bottom",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ante Like",
+      "settings": {
+        "heading": "Text heading",
+        "subheading": "Subheading",
+        "text_content": "<p>Combine an image with text to highlight a specific product, collection, or blog post of your choice. Enhance the content by including information on its availability, style, or possibly a review.</p>",
+        "button_label": "Button label",
+        "button_aria_label": "Button label",
+        "button_url": "/"
+      }
+    }
+  ]
+}
+{%- endschema -%}

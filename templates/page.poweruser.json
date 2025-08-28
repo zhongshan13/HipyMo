@@ -1,0 +1,356 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_EVYWAE": {
+      "type": "slideshow",
+      "blocks": {
+        "image_VF6NLC": {
+          "type": "image",
+          "settings": {
+            "image_desktop": "shopify://shop_images/H-022_3207-19_PC.png",
+            "image_mobile": "shopify://shop_images/H-022_3207-19.png",
+            "label": "",
+            "heading": "Reward Program",
+            "description": "<p>Join Hipymo Reward Program, enjoy exclusive offers, discounts, early access to giveaways, and more!<br/></p><p>Welcome to join us</p>",
+            "button_text": "Join Now",
+            "button_aria_label": "Join Now",
+            "button_link": "/account/register",
+            "open_in_new_tab": false,
+            "make_link_full_slide": false,
+            "second_button_text": "Log In",
+            "second_button_aria_label": "Log In",
+            "second_button_link": "/account/login",
+            "second_open_in_new_tab": false,
+            "text_alignment_inside_block": "center",
+            "content_layout": "center",
+            "content_alignment": "slideshow__slide-content--center",
+            "background_color": "#757575",
+            "background_content": "",
+            "label_color": "#ffffff",
+            "heading_color": "#ffffff",
+            "description_color": "#ffffff",
+            "button_text_color": "#ffffff",
+            "button_background_color": "#ab9b81",
+            "button_border_color": "#ab9b81",
+            "button_text_color_hover": "#000000",
+            "button_background_color_hover": "#ffffff",
+            "button_border_color_hover": "#000000",
+            "second_button_text_color": "#000000",
+            "second_button_background_color": "#ffffff",
+            "second_button_border_color": "#ffffff",
+            "second_button_text_color_hover": "#ffffff",
+            "second_button_background_color_hover": "#000000",
+            "second_button_border_color_hover": "#000000",
+            "overlay_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_VF6NLC"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "desktop_slide_per_view": "1",
+        "height_desktop": 80,
+        "height_mobile": 100,
+        "subtract_header_height": false,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0,
+        "show_arrows": true,
+        "show_pagination": false,
+        "show_progress_bar": false,
+        "enable_loop": true,
+        "enable_autoplay": false,
+        "autoplay_speed": 5,
+        "animation_speed": 0.5,
+        "animation_type": "creative",
+        "enable_lazy_load": true,
+        "background_color": "#757575",
+        "progress_bar_color": "#ffffff",
+        "arrows_color": "#ffffff",
+        "pagination_color": "#ffffff",
+        "play_color": "#2c2a28",
+        "play_background_color": "#f9f9f9",
+        "play_hover_color": "#f9f9f9",
+        "play_background_hover_color": "#2c2a28"
+      }
+    },
+    "ante_reward_card_iUjNJH": {
+      "type": "ante-reward-card",
+      "blocks": {
+        "card_9mWpE8": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/1b662c9f72f8f77f7f3e7eb3624161da.svg",
+            "title": "Signup",
+            "content": "<p>1000 points</p>"
+          }
+        },
+        "card_kBiiRa": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/472c541101559ad1b6bb14640e31e51b.svg",
+            "title": "Place an order",
+            "content": "<p>1 point for every $1 spent</p>"
+          }
+        },
+        "card_aCWc9m": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/e17747a31b55913dc9d593e559737a5b.svg",
+            "title": "Celebrate a birthday",
+            "content": "<p>500 points</p>"
+          }
+        },
+        "card_AwQaeR": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/tiktok.svg",
+            "title": "Follow on TikTok",
+            "content": "<p>200 points</p>"
+          }
+        },
+        "card_9f9FBk": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/tuite-copy.svg",
+            "title": "Follow on X",
+            "content": "<p>200 points</p>"
+          }
+        }
+      },
+      "block_order": [
+        "card_9mWpE8",
+        "card_kBiiRa",
+        "card_aCWc9m",
+        "card_AwQaeR",
+        "card_9f9FBk"
+      ],
+      "name": "Ante Reward Card",
+      "settings": {
+        "text_alignment": "center",
+        "heading": "Ways to earn points",
+        "subheading": "",
+        "text_content": "",
+        "button_label": "",
+        "button_aria_label": "",
+        "button_url": "/",
+        "button_style": "primary",
+        "is_show_border_top": false,
+        "is_show_border_bottom": false,
+        "border_color": "#e6e6e6",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "ante_reward_card_aG4tad": {
+      "type": "ante-reward-card",
+      "blocks": {
+        "card_mMcBWW": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/cd5f35c41a528206b956a7942aa4d67c.svg",
+            "title": "$30 off coupon",
+            "content": "<p>Get a $30 discount for 1000 points</p>"
+          }
+        },
+        "card_xVJLwk": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/cd5f35c41a528206b956a7942aa4d67c.svg",
+            "title": "$50 off coupon",
+            "content": "<p>Get a $50 discount for 1500 points</p>"
+          }
+        },
+        "card_rcpcdW": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/cd5f35c41a528206b956a7942aa4d67c.svg",
+            "title": "$80 off coupon",
+            "content": "<p>Get a $80 discount for 2000 points</p>"
+          }
+        },
+        "card_44Grhf": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/cd5f35c41a528206b956a7942aa4d67c.svg",
+            "title": "$110 off coupon",
+            "content": "<p>Get a $110 discount for 2500 points</p>"
+          }
+        },
+        "card_WR3aMc": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/cd5f35c41a528206b956a7942aa4d67c.svg",
+            "title": "$140 off coupon",
+            "content": "<p>Get a $140 discount for 3000 points</p>"
+          }
+        },
+        "card_dALUyJ": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/cd5f35c41a528206b956a7942aa4d67c.svg",
+            "title": "Cash Back",
+            "content": "<p>Get a $100 for 4000 points</p>"
+          }
+        }
+      },
+      "block_order": [
+        "card_mMcBWW",
+        "card_xVJLwk",
+        "card_rcpcdW",
+        "card_44Grhf",
+        "card_WR3aMc",
+        "card_dALUyJ"
+      ],
+      "name": "Ante Reward Card",
+      "settings": {
+        "text_alignment": "center",
+        "heading": "Ways to spend points",
+        "subheading": "",
+        "text_content": "",
+        "button_label": "",
+        "button_aria_label": "",
+        "button_url": "/",
+        "button_style": "primary",
+        "is_show_border_top": false,
+        "is_show_border_bottom": false,
+        "border_color": "#e6e6e6",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "default-page": {
+      "type": "default-page-template",
+      "disabled": true,
+      "settings": {
+        "offset_top_desktop": 60,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 30,
+        "offset_bottom_mobile": 30
+      }
+    },
+    "faq_simple_H7XKdx": {
+      "type": "faq-simple",
+      "blocks": {
+        "category_KC4Lnf": {
+          "type": "category",
+          "disabled": true,
+          "settings": {
+            "heading": "FAQ"
+          }
+        },
+        "faq_item_9xpfjX": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How do I earn points?",
+            "text": "<p>You earn 1 point for every $1 you spend. You can also earn bonus points for creating an account, referring friends, and joining special promotions.</p>"
+          }
+        },
+        "faq_item_MHXBTc": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How can I use my points?",
+            "text": "<p>Points can be redeemed for discounts, cashback (manual process), or special rewards depending on your balance.</p>"
+          }
+        },
+        "faq_item_jBFfx3": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How does the cashback work?",
+            "text": "<p>For every 4,000 points, you can claim <strong>$100 cashback</strong>.<br/>To redeem, please email us at <a><strong>support@hipymo.com</strong></a> with your account email and payment details. We’ll process your cashback within 3 business days.<br/><br/></p>"
+          }
+        },
+        "faq_item_jhqUyk": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Where can these coupons be used?",
+            "text": "<p>Coupons can be applied directly at checkout and are valid for any product in our store.</p>"
+          }
+        },
+        "faq_item_t7LYNU": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I combine coupons or discounts?",
+            "text": "<p>Each order can only accept one coupon/discount code at a time.</p>"
+          }
+        },
+        "faq_item_Vrkiax": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Do my points expire?",
+            "text": "<p>Yes, points expire after 12 months of inactivity. Please make sure to use them before they expire.</p>"
+          }
+        },
+        "faq_item_RX843A": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How does the referral program work?",
+            "text": "<p>Invite a friend with your referral link. When your friend places their first order of $700 or more, they will get 5% discount, and you’ll receive 2000 points as a thank-you reward.</p>"
+          }
+        },
+        "faq_item_a8KHBx": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How do I check my points balance?",
+            "text": "<p>Simply click the Rewards button at the bottom corner of our website. You’ll see your current points, ways to earn more, and available rewards.</p>"
+          }
+        },
+        "faq_item_qePPWP": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What happens if I return an order?",
+            "text": "<p>If you return an order in full, the points earned from that order will be refunded back to your account. For partial returns, the equivalent amount of points will be deducted based on the refund value.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_KC4Lnf",
+        "faq_item_9xpfjX",
+        "faq_item_MHXBTc",
+        "faq_item_jBFfx3",
+        "faq_item_jhqUyk",
+        "faq_item_t7LYNU",
+        "faq_item_Vrkiax",
+        "faq_item_RX843A",
+        "faq_item_a8KHBx",
+        "faq_item_qePPWP"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "label": "",
+        "heading": "FAQ",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "offset_top_desktop": 60,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 30,
+        "offset_bottom_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "slideshow_EVYWAE",
+    "ante_reward_card_iUjNJH",
+    "ante_reward_card_aG4tad",
+    "default-page",
+    "faq_simple_H7XKdx"
+  ]
+}

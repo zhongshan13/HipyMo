@@ -1,0 +1,144 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "contact-page-template": {
+      "type": "contact-page-template",
+      "disabled": true,
+      "settings": {
+        "label": "",
+        "info_heading": "Contact information",
+        "address_heading": "",
+        "address_text": "",
+        "phone_heading": "",
+        "phone_text": "",
+        "email_heading": "",
+        "email_text": "",
+        "social_heading": "Follow us",
+        "show_social": true,
+        "map_api_key": "",
+        "map_query": "Eiffel+Tower,Paris+France",
+        "map_url": "https://goo.gl/maps/PBiq6DGwffTryEy49",
+        "form_heading": "Get in touch",
+        "name_placeholder": "Your name...",
+        "email_placeholder": "Your email...",
+        "message_placeholder": "Your message...",
+        "submit_label": "Send",
+        "offset_top_desktop": 60,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 50,
+        "offset_bottom_mobile": 50
+      }
+    },
+    "benefits": {
+      "type": "benefits",
+      "blocks": {
+        "benefits_0": {
+          "type": "benefits_item",
+          "settings": {
+            "heading": "100 days return",
+            "text": "No questions asked",
+            "block_link": "/",
+            "button_aria": "Read more about Shipping and Delivery"
+          }
+        },
+        "benefits_1": {
+          "type": "benefits_item",
+          "settings": {
+            "heading": "Lifetime Warranty",
+            "text": "For original owners",
+            "block_link": "/",
+            "button_aria": "Read more about Privacy Policy"
+          }
+        },
+        "benefits_2": {
+          "type": "benefits_item",
+          "settings": {
+            "heading": "Customer Service",
+            "text": "Our priority",
+            "block_link": "/",
+            "button_aria": "Go to Contact page"
+          }
+        }
+      },
+      "block_order": [
+        "benefits_0",
+        "benefits_1",
+        "benefits_2"
+      ],
+      "settings": {
+        "section_background": "#ffffff",
+        "heading_color": "#000000",
+        "text_color": "#757575",
+        "border_color": "#000000",
+        "outline_color": "#d2d2d2",
+        "full_width": true,
+        "show_borders": true,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "full_width": false,
+        "layout": "two_column",
+        "heading": "Newsletter",
+        "subheading": "The Latest products & Offers",
+        "success_message": "Thanks for subscribing",
+        "text": "<p>Be the first to know about new collections and exclusive offers</p>",
+        "image_position": "left",
+        "email_placeholder": "Your email",
+        "button_aria_label": "Submit",
+        "section_background": "#fafafa",
+        "heading_color": "#757575",
+        "text_color": "#000000",
+        "content_color": "#c1bdb9",
+        "input_label_color": "#c1bdb9",
+        "input_color": "#000000",
+        "input_border_color": "#000000",
+        "button_circle_text_color": "#f9f5f0",
+        "button_circle_background_color": "rgba(0,0,0,0)",
+        "button_circle_border_color": "#f9f5f0",
+        "button_circle_outer_border_color": "#8b8885",
+        "button_circle_text_color_hover": "#2c2a28",
+        "button_circle_background_color_hover": "#eab88c",
+        "button_circle_border_color_hover": "#eab88c",
+        "button_circle_outer_border_color_hover": "#8b8885",
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0
+      }
+    },
+    "ticker": {
+      "type": "ticker",
+      "settings": {
+        "text": "<p>$3.99 flat rate shipping | Free shippin on orders $50+(Cont.US) Subscribe Today</p><p>Free shipping on orders over $44 Lear More</p><p>Become a subscriber and receive 15% off + free shipping!</p>",
+        "desktop_movement_speed": 100,
+        "mobile_movement_speed": 96,
+        "section_background": "#ffffff",
+        "text_color": "#000000",
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "contact-page-template",
+    "benefits",
+    "newsletter",
+    "ticker"
+  ]
+}

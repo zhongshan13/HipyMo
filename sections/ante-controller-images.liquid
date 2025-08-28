@@ -1,0 +1,516 @@
+{%- comment -%}
+  ------------------------------------------------------------------------------
+  	Section: Image with text
+  ------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- assign text_alignment = section.settings.text_alignment -%}
+{%- assign heading = section.settings.heading -%}
+{%- assign subheading = section.settings.subheading -%}
+{%- assign text_content = section.settings.text_content -%}
+{%- assign button_label = section.settings.button_label -%}
+{%- assign button_aria_label = section.settings.button_aria_label -%}
+{%- assign button_url = section.settings.button_url -%}
+{%- assign button_style = section.settings.button_style -%}
+{%- assign is_show_border_top = section.settings.is_show_border_top -%}
+{%- assign is_show_border_bottom = section.settings.is_show_border_bottom -%}
+{%- assign border_color = section.settings.border_color -%}
+{%- assign full_width = section.settings.full_width -%}
+<style>
+  .ante-Template .ante-template {
+    text-align: var(--text-alignment);
+  }
+  .ante-temp .ante-temp__heading + .ante-temp__subheading,
+  .ante-Template .swiper-box-frist .sub_heading + .heading {
+    margin-top: 20px;
+  }
+  .ante-temp .ante-tmp__button {
+    margin-top: 30px;
+  }
+  .ante-Template .ante-controller {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    background: {{ section.settings.bg_color }};
+  }
+  .ante-Template .swiper-box-frist {
+    width: 50%;
+    padding-right: 50px;
+  }
+  .ante-Template .swiper-box-frist .swiper-wrapper {
+    height: auto;
+  }
+  .ante-Template .swiper-box-frist .swiper-pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    column-gap: 40px;
+    position: relative;
+    bottom: 0;
+
+  }
+  .ante-Template .swiper-box-second {
+    width: 50%;
+  }
+  .ante-Template .swiper-box-frist .swiper {
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .ante-Template .swiper-box-frist .swiper.swiper1 .swiper-slide{
+    background-color: #f5f5f5;
+  }
+  .ante-Template .swiper-box-frist .swiper-pagination-bullet {
+    width: auto; /* 允许显示文字 */
+    height: auto;
+    margin: 0 !important;
+    position: relative;
+    border-radius: unset;
+    display: inline-block;
+    border: none;
+    opacity: 1;
+    color: #999;
+  }
+  .ante-Template .swiper-box-frist .swiper-pagination-bullet .bullet-text::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* 下划线位置 */
+    height: 2px; /* 下划线高度 */
+    width: 100%; /* 初始宽度 */
+    background-color: #999; /* 下划线颜色 */
+    transition: width 4s linear;
+  }
+  .ante-Template .swiper-box-frist .swiper-pagination-bullet .bullet-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* 下划线位置 */
+    height: 2px; /* 下划线高度 */
+    width: 0%; /* 初始宽度 */
+    background-color: #000; /* 下划线颜色 */
+  }
+  .ante-Template .swiper-box-frist .swiper-pagination-bullet.swiper-pagination-bullet-active .bullet-text::after {
+    width: 100%; /* 激活时动画宽度100% */
+    transition: width 4s linear;
+  }
+  .ante-Template
+    .swiper-box-frist
+    .swiper-pagination-bullet.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: black;
+    font-weight: 600;
+    z-index: 2;
+    /* 目标颜色 */
+    animation: reveal 4s linear forwards;
+  }
+  @keyframes reveal {
+    from {
+      width: 0%;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+  .ante-Template
+    .swiper-box-frist
+    .swiper-pagination-bullets
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: transparent;
+    color: #999;
+  }
+
+  .ante-Template .bullet-text {
+    position: relative;
+    z-index: 1;
+  }
+  .ante-Template .swiper1 p {
+    font-size: 16px;
+    line-height: 2.2;
+  }
+  .ante-Template .bullet-text {
+    font-weight: 600;
+  }
+
+  @media (min-width: 768px) {
+    .ante-temp .ante-temp__heading + .ante-temp__subheading,
+    .ante-Template .swiper-box-frist .sub_heading + .heading,
+    .ante-Template .swiper-box-frist .heading + p {
+      margin-top: 30px;
+    }
+    .ante-temp .ante-tmp__button {
+      margin-top: 50px;
+    }
+  }
+  @media (max-width: 1000px){
+    .ante-Template .ante-controller{
+      padding: 25px;
+    }
+    .ante-Template .ante-controller {
+      flex-direction: column-reverse;
+    }
+    .ante-Template .swiper-box-frist {
+      width: 100%;
+      padding: 20px 10px;
+    }
+    .ante-Template .swiper-box-second {
+      width: 100%;
+    }
+}
+  @media screen and (max-width: 767px) {
+    
+     .ante-Template .ante-controller{
+      padding: 16px;
+    }
+  }
+</style>
+{%- capture section_styles -%}
+	--text-alignment: {{ text_alignment | replace: "left", "start" | replace: "right", "end" }};
+	--border-top-value: {% if is_show_border_top %}1px solid {{ border_color }} {% else %}none{% endif %};
+	--border-bottom-value: {% if is_show_border_bottom %}1px solid {{ border_color }} {% else %}none{% endif %};
+{%- endcapture -%}
+
+{% capture button %}
+	{%- if button_label != blank and button_url != blank -%}
+		<a
+			href="{{- button_url -}}"
+			{%- if button_aria_label != blank -%}aria-label="{{- button_aria_label | escape -}}"{%- endif -%}
+			class="{% if button_style == 'circle' and settings.design == 'alternate' %}button-circle{% endif %} ante-tmp__button {% if settings.design == 'alternate' %}button-new{% else %}button{% endif %} button--{% if button_style == 'circle' and settings.design == 'standard' %}primary{% else %}{{- button_style -}}{% endif %}">
+			<span class="button__text {{ design }}">
+				{{- button_label -}}
+			</span>
+
+			{% if button_style == 'circle' and settings.design == 'alternate' %}
+				<span class="button-new__icon-container">
+					<span class="button-new__icon-wrapper">
+						{% render "icons-new", icon: "wave" %}
+					</span>
+				</span>
+			{% endif %}
+		</a>
+	{%- endif -%}
+{% endcapture %}
+
+{%- capture content -%}
+	<div class="ante-temp">
+		<div class="ante-temp-content">
+			{%- if heading != blank -%}
+				<h2 class="h2 ante-temp__heading">
+					{{- heading -}}
+				</h2>
+			{%- endif -%}
+
+			{% if subheading != blank %}
+				<p class="ante-temp__subheading">{{ subheading }}</p>
+			{% endif %}
+
+			{%- if text_content != blank -%}
+				<div class="ante-temp__text-content section-rte">
+					{{- text_content -}}
+				</div>
+			{%- endif -%}
+
+			{{ button }}
+		</div>
+	</div>
+{%- endcapture -%}
+
+{%- style -%}
+  #shopify-section-{{- section.id -}} {
+  	padding-top: {{- section.settings.offset_top_mobile -}}px;
+  	padding-bottom: {{- section.settings.offset_bottom_mobile -}}px;
+  }
+
+  @media screen and (min-width: 992px) {
+  	#shopify-section-{{- section.id -}} {
+  		padding-top: {{- section.settings.offset_top_desktop -}}px;
+  		padding-bottom: {{- section.settings.offset_bottom_desktop -}}px;
+  	}
+  }
+{%- endstyle -%}
+
+{% assign is_lazy = true %}
+
+{% if section.blocks.size == 1 %}
+  {% assign is_lazy = false %}
+{% endif %}
+
+<section
+  class="ante-Template js-animate{% if request.visual_preview_mode or section.index == 1 %} animated{% endif %}"
+  style="{{ section_styles }}"
+>
+  <div
+    class="container ante-template {% if full_width == false %}page-width{% endif %}"
+  >
+    <div class="ante-header">
+      {{- content -}}
+    </div>
+    <div class="ante-content">
+      <ante-controller class="ante-controller">
+        <div class="swiper-box swiper-box-frist">
+          <div class="swiper swiper1">
+            <div class="swiper-wrapper">
+              {%- for block in section.blocks -%}
+                <div class="swiper-slide">
+                  <span class="h4 sub_heading">{{ block.settings.hub_heading }}</span>
+                  <h2 class="h1 heading">{{ block.settings.heading | strip_html }}</h2>
+                  {{ block.settings.text }}
+                </div>
+              {%- endfor -%}
+            </div>
+            <script class="data-tab">
+              [
+                {%  for block in section.blocks %}
+                  "{{- block.settings.tab -}}"{% unless forloop.last %},{% endunless %}
+                  {% endfor %}
+              ]
+            </script>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="swiper-box swiper-box-second">
+          <div class="swiper swiper2">
+            <div class="swiper-wrapper">
+              {%- for block in section.blocks -%}
+                <div class="swiper-slide">
+                  {%- render 'story-telling-image',
+                    image_desktop: block.settings.image,
+                    image_mobile: block.settings.image_mobile,
+                    is_lazy: is_lazy
+                  -%}
+                </div>
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      </ante-controller>
+    </div>
+  </div>
+</section>
+
+{%- schema -%}
+{
+  "name": "Ante Controller Images",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "id": "text_alignment",
+      "type": "select",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "id": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "id": "subheading",
+      "type": "textarea",
+      "label": "Subheading"
+    },
+    {
+      "id": "text_content",
+      "type": "richtext",
+      "label": "Text"
+    },
+    {
+      "id": "button_label",
+      "type": "text",
+      "label": "Button label"
+    },
+    {
+      "id": "button_aria_label",
+      "type": "text",
+      "label": "Button aria-label",
+      "info": "Need for good accessibility, e.g. 'All news about...'. [Learn more](https://utdweb.team/shopify-themes/gain/manual#section-image-with-text)"
+    },
+    {
+      "id": "button_url",
+      "type": "url",
+      "label": "Button link"
+    },
+    {
+      "id": "button_style",
+      "type": "select",
+      "label": "Button style",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "circle",
+          "label": "Circle"
+        }
+      ],
+      "info": "Circle button appears with an alternate design",
+      "default": "primary"
+    },
+    {
+      "id": "is_show_border_top",
+      "type": "checkbox",
+      "label": "Show border-top",
+      "default": false,
+      "info": "Only desktop and works with a standard design"
+    },
+    {
+      "id": "is_show_border_bottom",
+      "type": "checkbox",
+      "label": "Show border-bottom",
+      "default": false,
+      "info": "Only desktop and works with a standard design"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e6e6e6"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Make full width",
+      "default": true,
+      "info": "If unchecked - container width will be set based on the group 'Layout' settings in the Theme settings."
+    },
+    {
+      "type": "range",
+      "id": "offset_top_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Desktop offset top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "offset_bottom_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Desktop offset bottom",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "offset_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile offset top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "offset_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile offset bottom",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id":"bg_color",
+      "label": "bg_color",
+      "default":"#FFFFFF"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Mobile Image"
+        },
+        {
+          "type": "text",
+          "id": "hub_heading",
+          "label": "Hub Heading",
+          "default": "Hub Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "tab",
+          "label": "Tab",
+          "default": "Tab"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ante Controller Images",
+      "settings": {
+        "heading": "Text heading",
+        "subheading": "Subheading",
+        "text_content": "<p>Combine an image with text to highlight a specific product, collection, or blog post of your choice. Enhance the content by including information on its availability, style, or possibly a review.</p>",
+        "button_label": "Button label",
+        "button_aria_label": "Button label",
+        "button_url": "/"
+      }
+    }
+  ]
+}
+{%- endschema -%}

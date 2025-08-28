@@ -1,0 +1,286 @@
+{%- comment -%}
+  ------------------------------------------------------------------------------
+  	Section: Image with text
+  ------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- assign full_width = section.settings.full_width -%}
+<style>
+  .ante-temp .ante-temp__heading + .ante-temp__subheading {
+    margin-top: 20px;
+  }
+  .ante-temp .ante-tmp__button {
+    margin-top: 30px;
+  }
+  .ante-collections .ante-products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+  }
+  .ante-collections .ante-col-title,
+  .ante-collections .ante-products {
+    padding-top: 40px;
+    padding-bottom: 15px;
+  }
+  .ante-collections .ante-url {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .ante-collections .ante-col-box {
+    border-bottom: 1px solid #26262650;
+    margin-bottom: 24px;
+    padding-bottom: 2rem;
+    scroll-margin-top: var(--nav-height);
+  }
+  .ante-collections .ante-navigation {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .ante-collections .ante-navigation .ante-btn {
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+  .ante-collections .ante-navigation .ante-btn.active {
+    background-color: #ededed;
+  }
+  .ante-collections .ante-col-box:last-child {
+    border: none;
+  }
+  .ante-collections .ante-navigation {
+    position: sticky;
+    top: calc(var(--header-height) - 1px);
+    z-index: 5;
+    background: #fff;
+    box-shadow: 0px 4px 11px 0px rgb(0 0 0 / 10%);
+    padding: 10px 0;
+  }
+  @media (max-width: 767px) and (min-width: 501px) {
+    .ante-collections .ante-products {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+  }
+  @media (max-width: 500px) {
+    .ante-collections .ante-products {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 16px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .ante-collections .ante-navigation {
+      justify-content: start;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      padding-inline: 20px;
+      scroll-snap-type: x mandatory; /* 启用横向滚动捕捉 */
+    }
+
+    .ante-collections .ante-navigation .ante-btn {
+      scroll-snap-align: center;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .ante-temp .ante-temp__heading + .ante-temp__subheading {
+      margin-top: 30px;
+    }
+    .ante-temp .ante-tmp__button {
+      margin-top: 50px;
+    }
+  }
+</style>
+
+{%- style -%}
+  #shopify-section-{{- section.id -}} {
+  	padding-top: {{- section.settings.offset_top_mobile -}}px;
+  	padding-bottom: {{- section.settings.offset_bottom_mobile -}}px;
+  }
+
+  @media screen and (min-width: 992px) {
+  	#shopify-section-{{- section.id -}} {
+  		padding-top: {{- section.settings.offset_top_desktop -}}px;
+  		padding-bottom: {{- section.settings.offset_bottom_desktop -}}px;
+  	}
+  }
+{%- endstyle -%}
+
+{% assign is_lazy = true %}
+
+{% if section.index == 1 %}
+  {% assign is_lazy = false %}
+{% endif %}
+
+<section
+  class="ante-Template ante-collections js-animate{% if request.visual_preview_mode or section.index == 1 %} animated{% endif %}"
+>
+  <ante-navigation class="ante-navigation">
+    {%- if section.blocks.size == 0 -%}
+      {%- for collection in collections limit: 8 -%}
+        {%- if collection.products.count > 0 -%}
+          <div class="ante-btn" data-target="ante-col-{{ collection.id }}">
+            <span class="ante-col-title">{{ collection.title }}</span>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- else -%}
+      {%- for block in section.blocks -%}
+        {%- assign collection = block.settings.collection -%}
+        {%- if collection.products.count > 0 -%}
+          <div class="ante-btn" data-target="ante-col-{{ collection.id }}">
+            <span class="ante-col-title">{{ collection.title }}</span>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  </ante-navigation>
+  <div
+    class="container ante-collections-content ante-template {% if full_width == false %}page-width{% endif %}"
+  >
+    <div class="ante-content">
+      {%- if section.blocks.size == 0 -%}
+        {%- for collection in collections limit: 8 -%}
+          {%- if collection.products.count > 0 -%}
+            <div id="ante-col-{{ collection.id }}" class="ante-col-box">
+              <div class="ante-col-title">
+                <h3 class="h3">{{ collection.title }}</h3>
+              </div>
+              <div class="ante-products">
+                {%- for product in collection.products limit: 15 -%}
+                  <div class="ante-product">
+                    {% render 'product-card', product: product %}
+                  </div>
+                {%- endfor -%}
+              </div>
+              <div class="ante-url">
+                <a href="{{ collection.url }}"> View Collection </a>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- else -%}
+        {%- for block in section.blocks -%}
+          {%- assign collection = block.settings.collection -%}
+          {%- if collection.products.count > 0 -%}
+            <div id="ante-col-{{ collection.id }}" class="ante-col-box">
+              <div class="ante-col-title">
+                <h3 class="h3">{{ collection.title }}</h3>
+              </div>
+              <div class="ante-products">
+                {%- for product in collection.products limit: 15 -%}
+                  <div class="ante-product">
+                    {% render 'product-card', product: product %}
+                  </div>
+                {%- endfor -%}
+              </div>
+              {%- assign button_label = " View Collection" -%}
+              <div class="ante-url">
+                <a href="{{ collection.url }}">
+                  <a
+                    href="{{- collection.url -}}"
+                    class=" ante-tmp__button button--secondary {% if settings.design == 'alternate' %}button-new{% else %}button{% endif %}"
+                  >
+                    <span class="button__text ">
+                      {{- button_label -}}
+                    </span>
+                  </a>
+                </a>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{%- schema -%}
+{
+  "name": "Ante Collections",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Make full width",
+      "default": true,
+      "info": "If unchecked - container width will be set based on the group 'Layout' settings in the Theme settings."
+    },
+    {
+      "type": "range",
+      "id": "offset_top_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Desktop offset top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "offset_bottom_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Desktop offset bottom",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "offset_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile offset top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "offset_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile offset bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "collection",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ante Collections",
+      "settings": {}
+    }
+  ]
+}
+{%- endschema -%}

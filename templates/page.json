@@ -1,0 +1,92 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "default-page": {
+      "type": "default-page-template",
+      "settings": {
+        "offset_top_desktop": 60,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 30,
+        "offset_bottom_mobile": 30
+      }
+    },
+    "faq_simple_H7XKdx": {
+      "type": "faq-simple",
+      "blocks": {
+        "category_KC4Lnf": {
+          "type": "category",
+          "settings": {
+            "heading": "General"
+          }
+        },
+        "faq_item_9xpfjX": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What products do we sell?",
+            "text": "<p>We sell many useful products.</p><p>You can view them on the collection page.</p>"
+          }
+        },
+        "faq_item_MHXBTc": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How many products are in the store?",
+            "text": "<p>We have a wide variety of products in stock.</p>"
+          }
+        },
+        "category_K3tLBc": {
+          "type": "category",
+          "settings": {
+            "heading": "Shipping"
+          }
+        },
+        "faq_item_jBFfx3": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What is the delivery time?",
+            "text": "<p>Delivery time on average 3 days</p>"
+          }
+        },
+        "faq_item_jhqUyk": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Do we have local pickup?",
+            "text": "<p>Yes, we have the option of self-pickup from our stores.</p><p>For detailed information please contact us.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_KC4Lnf",
+        "faq_item_9xpfjX",
+        "faq_item_MHXBTc",
+        "category_K3tLBc",
+        "faq_item_jBFfx3",
+        "faq_item_jhqUyk"
+      ],
+      "disabled": true,
+      "name": "FAQ",
+      "settings": {
+        "label": "",
+        "heading": "FAQ",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "offset_top_desktop": 60,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 30,
+        "offset_bottom_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "default-page",
+    "faq_simple_H7XKdx"
+  ]
+}

@@ -1,0 +1,429 @@
+{%- comment -%}
+  ------------------------------------------------------------------------------
+  	Section: Image with text
+  ------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- assign text_alignment = section.settings.text_alignment -%}
+{%- assign heading = section.settings.heading -%}
+{%- assign subheading = section.settings.subheading -%}
+{%- assign text_content = section.settings.text_content -%}
+{%- assign button_label = section.settings.button_label -%}
+{%- assign button_aria_label = section.settings.button_aria_label -%}
+{%- assign button_url = section.settings.button_url -%}
+{%- assign button_style = section.settings.button_style -%}
+{%- assign is_show_border_top = section.settings.is_show_border_top -%}
+{%- assign is_show_border_bottom = section.settings.is_show_border_bottom -%}
+{%- assign border_color = section.settings.border_color -%}
+{%- assign full_width = section.settings.full_width -%}
+<style>
+  .ante-Template .ante-template {
+    text-align: var(--text-alignment);
+  }
+  .ante-temp .ante-temp__heading + .ante-temp__subheading {
+    margin-top: 20px;
+  }
+  .ante-temp .ante-tmp__button {
+    margin-top: 30px;
+  }
+  .ante-specifications .ante-spe-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .ante-specifications .ante-box .ante-spe-cont {
+    margin-top: 20px;
+  }
+  .ante-specifications .ante-box {
+    padding: 80px;
+    background-color: #f5f5f5;
+  }
+  .ante-specifications .ante-box .ante-spe-cont .spe-value {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    border-top: 1px solid #26262630;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ante-specifications .swiper-pagination {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+  }
+  @media (min-width: 769px) {
+    .ante-temp .ante-temp__heading + .ante-temp__subheading {
+      margin-top: 30px;
+    }
+    .ante-temp .ante-tmp__button {
+      margin-top: 50px;
+    }
+  }
+  @media (max-width: 768px) {
+    .ante-specifications .ante-spe-box {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      
+    }
+    .ante-specifications .ante-box{
+      padding: 20px;
+    }
+  }
+  @media (max-width: 1000px) {
+    .ante-specifications .ante-box{
+      padding: 40px;
+    }
+  }
+</style>
+{%- capture section_styles -%}
+	--text-alignment: {{ text_alignment | replace: "left", "start" | replace: "right", "end" }};
+	--border-top-value: {% if is_show_border_top %}1px solid {{ border_color }} {% else %}none{% endif %};
+	--border-bottom-value: {% if is_show_border_bottom %}1px solid {{ border_color }} {% else %}none{% endif %};
+{%- endcapture -%}
+
+{% capture button %}
+	{%- if button_label != blank and button_url != blank -%}
+		<a
+			href="{{- button_url -}}"
+			{%- if button_aria_label != blank -%}aria-label="{{- button_aria_label | escape -}}"{%- endif -%}
+			class="{% if button_style == 'circle' and settings.design == 'alternate' %}button-circle{% endif %} ante-tmp__button {% if settings.design == 'alternate' %}button-new{% else %}button{% endif %} button--{% if button_style == 'circle' and settings.design == 'standard' %}primary{% else %}{{- button_style -}}{% endif %}">
+			<span class="button__text {{ design }}">
+				{{- button_label -}}
+			</span>
+
+			{% if button_style == 'circle' and settings.design == 'alternate' %}
+				<span class="button-new__icon-container">
+					<span class="button-new__icon-wrapper">
+						{% render "icons-new", icon: "wave" %}
+					</span>
+				</span>
+			{% endif %}
+		</a>
+	{%- endif -%}
+{% endcapture %}
+
+{%- capture content -%}
+	<div class="ante-temp">
+		<div class="ante-temp-content">
+			{%- if heading != blank -%}
+				<h2 class="h2 ante-temp__heading">
+					{{- heading -}}
+				</h2>
+			{%- endif -%}
+
+			{% if subheading != blank %}
+				<p class="ante-temp__subheading">{{ subheading }}</p>
+			{% endif %}
+
+			{%- if text_content != blank -%}
+				<div class="ante-temp__text-content section-rte">
+					{{- text_content -}}
+				</div>
+			{%- endif -%}
+
+			{{ button }}
+		</div>
+	</div>
+{%- endcapture -%}
+
+{%- style -%}
+  #shopify-section-{{- section.id -}} {
+  	padding-top: {{- section.settings.offset_top_mobile -}}px;
+  	padding-bottom: {{- section.settings.offset_bottom_mobile -}}px;
+  }
+
+  @media screen and (min-width: 992px) {
+  	#shopify-section-{{- section.id -}} {
+  		padding-top: {{- section.settings.offset_top_desktop -}}px;
+  		padding-bottom: {{- section.settings.offset_bottom_desktop -}}px;
+  	}
+  }
+{%- endstyle -%}
+
+{% assign is_lazy = true %}
+
+{% if section.index == 1 %}
+  {% assign is_lazy = false %}
+{% endif %}
+
+<section
+  class="ante-Template ante-specifications js-animate{% if request.visual_preview_mode or section.index == 1 %} animated{% endif %}"
+  style="{{ section_styles }}"
+>
+  <div
+    class="container ante-template {% if full_width == false %}page-width{% endif %}"
+  >
+    <div class="ante-header">
+      {{- content -}}
+    </div>
+    <div class="ante-content">
+      <ante-specifications>
+        <div class="ante-spe-box">
+          <div class="ante-media">
+            {%- if section.settings.show_images and product.metafields.custom.images.value != blank -%}
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  {%- for img in product.metafields.custom.images.value -%}
+                    <div class="swiper-slide">
+                      {{ img | image_url: width: img.wieh | image_tag: class: 'ante-img', loading: 'lazy' }}
+                    </div>
+                  {%- endfor -%}
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            {%- elsif section.settings.image_picker != blank -%}
+              <div class="ante-image">
+                {%- assign img = section.settings.image_picker -%}
+                {{ img | image_url: width: img.wieh | image_tag: class: 'ante-img' }}
+              </div>
+            {% else %}
+              {{- 'image' | placeholder_svg_tag -}}
+            {%- endif -%}
+          </div>
+          <div class="ante-content">
+            <div class="ante-box">
+              <div class="ante-title">
+                {{ section.settings.spe_title }}
+              </div>
+              <div class="ante-spe-cont ante-value-box">
+                {%- assign spe_text_clean = section.settings.spe_text
+                  | remove: '<ol>'
+                  | remove: '</ol>'
+                  | remove: '<li>'
+                  | strip
+                -%}
+                {%- assign spe_value = spe_text_clean | split: '</li>' -%}
+                {%- for value in spe_value -%}
+                  {%- assign value_s = value | strip -%}
+                  {%- if value_s == '-----' -%}
+                    {% break %}
+                  {%- elsif value_s != '' -%}
+                    <div class="spe-value">
+                      {%- assign value_val = value | strip_html | split: ',' -%}
+                      <span class="spe-value-title">{{ value_val[0] }}</span>
+                      <p class="spe-value-val">{{ value_val[1] }}</p>
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+              <template class="spe-value-ante">
+                {%- assign spe_text_clean = section.settings.spe_text
+                  | remove: '<ol>'
+                  | remove: '</ol>'
+                  | remove: '<li>'
+                  | strip
+                -%}
+                {%- assign spe_sections = spe_text_clean | split: '-----' -%}
+                {%- for section_content in spe_sections -%}
+                  <div class="ante-spe-cont">
+                    {%- assign spe_value = section_content | strip | split: '</li>' -%}
+                    {%- for value in spe_value -%}
+                      {%- assign value_s = value | strip | strip_html -%}
+                      {%- if value_s != '' -%}
+                        <div class="spe-value">
+                          {%- assign value_val = value | strip_html | split: ',' -%}
+                          <span class="spe-value-title">{{ value_val[0] }}</span>
+                          <p class="spe-value-val">{{ value_val[1] }}</p>
+                        </div>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </div>
+                {%- endfor -%}
+              </template>
+            </div>
+          </div>
+        </div>
+      </ante-specifications>
+    </div>
+  </div>
+</section>
+
+{%- schema -%}
+{
+  "name": "Ante Specifications",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "id": "text_alignment",
+      "type": "select",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "id": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "id": "subheading",
+      "type": "textarea",
+      "label": "Subheading"
+    },
+    {
+      "id": "text_content",
+      "type": "richtext",
+      "label": "Text"
+    },
+    {
+      "id": "button_label",
+      "type": "text",
+      "label": "Button label"
+    },
+    {
+      "id": "button_aria_label",
+      "type": "text",
+      "label": "Button aria-label",
+      "info": "Need for good accessibility, e.g. 'All news about...'. [Learn more](https://utdweb.team/shopify-themes/gain/manual#section-image-with-text)"
+    },
+    {
+      "id": "button_url",
+      "type": "url",
+      "label": "Button link"
+    },
+    {
+      "id": "button_style",
+      "type": "select",
+      "label": "Button style",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "circle",
+          "label": "Circle"
+        }
+      ],
+      "info": "Circle button appears with an alternate design",
+      "default": "primary"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_picker",
+      "label": "Image"
+    },
+    {
+      "id": "show_images",
+      "type": "checkbox",
+      "label": "Images",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "spe_title",
+      "label": "Specifications Title"
+    },
+    {
+      "id": "spe_text",
+      "type": "richtext",
+      "label": "Specifications"
+    },
+    {
+      "id": "is_show_border_top",
+      "type": "checkbox",
+      "label": "Show border-top",
+      "default": false,
+      "info": "Only desktop and works with a standard design"
+    },
+    {
+      "id": "is_show_border_bottom",
+      "type": "checkbox",
+      "label": "Show border-bottom",
+      "default": false,
+      "info": "Only desktop and works with a standard design"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e6e6e6"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Make full width",
+      "default": true,
+      "info": "If unchecked - container width will be set based on the group 'Layout' settings in the Theme settings."
+    },
+    {
+      "type": "range",
+      "id": "offset_top_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Desktop offset top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "offset_bottom_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Desktop offset bottom",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "offset_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile offset top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "offset_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile offset bottom",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ante Specifications",
+      "settings": {
+        "heading": "Text heading",
+        "subheading": "Subheading",
+        "text_content": "<p>Combine an image with text to highlight a specific product, collection, or blog post of your choice. Enhance the content by including information on its availability, style, or possibly a review.</p>",
+        "button_label": "Button label",
+        "button_aria_label": "Button label",
+        "button_url": "/"
+      }
+    }
+  ]
+}
+{%- endschema -%}

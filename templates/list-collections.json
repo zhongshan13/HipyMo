@@ -1,0 +1,145 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "list-collections-template": {
+      "type": "list-collections-template",
+      "disabled": true,
+      "settings": {
+        "label": "",
+        "heading": "All collections",
+        "text": "",
+        "text_position": "under_the_image",
+        "paginate_by": 12,
+        "show_products_count": true,
+        "color_overlay": "rgba(44, 42, 40, 0.75)",
+        "inside_the_image_text": "#f7f2ec",
+        "inside_the_image_text_hover": "#000000",
+        "full_width": true,
+        "offset_top_desktop": 60,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 30,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "banner_RpTTbY": {
+      "type": "banner",
+      "blocks": {
+        "full_width_fcT88F": {
+          "type": "full_width",
+          "settings": {
+            "desktop_image_height": "700px",
+            "mobile_image_height": "600px",
+            "media_type": "image",
+            "label": "",
+            "heading": "Collections",
+            "text": "<p>Give customers details about the banner image or content on the banner.</p>",
+            "button_text": "",
+            "button_url": "/",
+            "button_aria": "",
+            "make_link_full_media": false,
+            "overlay_opacity": 30,
+            "overlay_color": "#000000",
+            "image_desktop": "shopify://shop_images/20250822-170728.png",
+            "image_border_width": 0,
+            "image_border_indent_desktop": 10,
+            "image_border_indent_mobile": 10,
+            "enable_lazy_load": true,
+            "external_video_url_desktop": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "external_video_url_mobile": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "content_alignment": "left",
+            "content_alignment_mobile": "left",
+            "block_alignment": "flex-start"
+          }
+        }
+      },
+      "block_order": [
+        "full_width_fcT88F"
+      ],
+      "name": "Banner",
+      "settings": {
+        "section_background": "#222222",
+        "label_color": "#ffffff",
+        "heading_color": "#ffffff",
+        "text_color": "#ffffff",
+        "link_color": "#d33636",
+        "button_background": "#ffffff",
+        "button_color": "#000000",
+        "button_border": "#ffffff",
+        "button_background_hover": "#000000",
+        "button_color_hover": "#ffffff",
+        "button_border_hover": "#ffffff",
+        "image_border_color": "#ffffff",
+        "button_circle_text_color": "#f9f5f0",
+        "button_circle_background_color": "rgba(0,0,0,0)",
+        "button_circle_border_color": "#f9f5f0",
+        "button_circle_outer_border_color": "#8b8885",
+        "button_circle_text_color_hover": "#2c2a28",
+        "button_circle_background_color_hover": "#eab88c",
+        "button_circle_border_color_hover": "#eab88c",
+        "button_circle_outer_border_color_hover": "#8b8885",
+        "full_width": false,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0
+      }
+    },
+    "ante_collections_YKAQN8": {
+      "type": "ante-collections",
+      "blocks": {
+        "collection_bzGK3e": {
+          "type": "collection",
+          "settings": {
+            "collection": "cozybay"
+          }
+        },
+        "collection_3Ftbdw": {
+          "type": "collection",
+          "settings": {
+            "collection": "soulnest"
+          }
+        },
+        "collection_tqG3N7": {
+          "type": "collection",
+          "settings": {
+            "collection": "ultra"
+          }
+        },
+        "collection_gpFb6K": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "direct-sales"
+          }
+        }
+      },
+      "block_order": [
+        "collection_bzGK3e",
+        "collection_3Ftbdw",
+        "collection_tqG3N7",
+        "collection_gpFb6K"
+      ],
+      "name": "Ante Collections",
+      "settings": {
+        "full_width": false,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 60
+      }
+    }
+  },
+  "order": [
+    "list-collections-template",
+    "banner_RpTTbY",
+    "ante_collections_YKAQN8"
+  ]
+}

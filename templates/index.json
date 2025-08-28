@@ -1,0 +1,1246 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "image_desktop": "shopify://shop_images/20250820-152952.png",
+            "label": "",
+            "heading": "Pack Small, Live Big",
+            "description": "<p>Premium compressed sofas.</p><p>Easy to move,quick to set up, built for everyday comfort.</p>",
+            "button_text": "SHOP NOW",
+            "button_aria_label": "read more",
+            "button_link": "shopify://collections",
+            "open_in_new_tab": false,
+            "make_link_full_slide": false,
+            "second_button_text": "",
+            "second_button_aria_label": "",
+            "second_button_link": "/",
+            "second_open_in_new_tab": false,
+            "text_alignment_inside_block": "center",
+            "content_layout": "center",
+            "content_alignment": "slideshow__slide-content--center",
+            "background_color": "#757575",
+            "background_content": "",
+            "label_color": "#ffffff",
+            "heading_color": "#262626",
+            "description_color": "#262626",
+            "button_text_color": "#ffffff",
+            "button_background_color": "#ab9b81",
+            "button_border_color": "rgba(0,0,0,0)",
+            "button_text_color_hover": "#ffffff",
+            "button_background_color_hover": "#847357",
+            "button_border_color_hover": "rgba(0,0,0,0)",
+            "second_button_text_color": "#ffffff",
+            "second_button_background_color": "#000000",
+            "second_button_border_color": "#000000",
+            "second_button_text_color_hover": "#000000",
+            "second_button_background_color_hover": "#ffffff",
+            "second_button_border_color_hover": "#000000",
+            "overlay_color": ""
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "image_desktop": "shopify://shop_images/20250820-183109.png",
+            "label": "",
+            "heading": "Famora Couch",
+            "description": "<p>Experience theperfect blend of style, comfort, and practicalitywith our premium compressed sofa. </p>",
+            "button_text": "SHOP NOW",
+            "button_aria_label": "Read more",
+            "button_link": "shopify://collections/cozybay",
+            "open_in_new_tab": false,
+            "make_link_full_slide": false,
+            "second_button_text": "",
+            "second_button_aria_label": "",
+            "second_button_link": "/",
+            "second_open_in_new_tab": false,
+            "text_alignment_inside_block": "center",
+            "content_layout": "start",
+            "content_alignment": "slideshow__slide-content--center",
+            "background_color": "#000000",
+            "background_content": "",
+            "label_color": "#ffffff",
+            "heading_color": "#262626",
+            "description_color": "#262626",
+            "button_text_color": "#ffffff",
+            "button_background_color": "#ab9b81",
+            "button_border_color": "rgba(0,0,0,0)",
+            "button_text_color_hover": "#ffffff",
+            "button_background_color_hover": "#847357",
+            "button_border_color_hover": "rgba(0,0,0,0)",
+            "second_button_text_color": "#ffffff",
+            "second_button_background_color": "#000000",
+            "second_button_border_color": "#000000",
+            "second_button_text_color_hover": "#000000",
+            "second_button_background_color_hover": "#ffffff",
+            "second_button_border_color_hover": "#000000",
+            "overlay_color": ""
+          }
+        },
+        "image-3": {
+          "type": "image",
+          "settings": {
+            "image_desktop": "shopify://shop_images/20250820-152952.png",
+            "label": "",
+            "heading": "Cloud Couch",
+            "description": "<p>Sink into plush cushions and enjoy timeless style with our premium compressed sofa. Bringing comfort and convenience straight to your home.</p>",
+            "button_text": "SHOP NOW",
+            "button_aria_label": "Read more",
+            "button_link": "/",
+            "open_in_new_tab": false,
+            "make_link_full_slide": false,
+            "second_button_text": "",
+            "second_button_aria_label": "",
+            "second_button_link": "/",
+            "second_open_in_new_tab": false,
+            "text_alignment_inside_block": "center",
+            "content_layout": "start",
+            "content_alignment": "slideshow__slide-content--center",
+            "background_color": "#757575",
+            "background_content": "",
+            "label_color": "#ffffff",
+            "heading_color": "#262626",
+            "description_color": "#262626",
+            "button_text_color": "#ffffff",
+            "button_background_color": "#ab9b81",
+            "button_border_color": "rgba(0,0,0,0)",
+            "button_text_color_hover": "#ffffff",
+            "button_background_color_hover": "#847357",
+            "button_border_color_hover": "rgba(0,0,0,0)",
+            "second_button_text_color": "#ffffff",
+            "second_button_background_color": "#000000",
+            "second_button_border_color": "#000000",
+            "second_button_text_color_hover": "#000000",
+            "second_button_background_color_hover": "#ffffff",
+            "second_button_border_color_hover": "#000000",
+            "overlay_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image-1",
+        "image-2",
+        "image-3"
+      ],
+      "settings": {
+        "desktop_slide_per_view": "1",
+        "height_desktop": 100,
+        "height_mobile": 100,
+        "subtract_header_height": true,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0,
+        "show_arrows": true,
+        "show_pagination": true,
+        "show_progress_bar": false,
+        "enable_loop": true,
+        "enable_autoplay": false,
+        "autoplay_speed": 7,
+        "animation_speed": 0.5,
+        "animation_type": "slide",
+        "enable_lazy_load": false,
+        "background_color": "#e4feff",
+        "progress_bar_color": "#ffffff",
+        "arrows_color": "#ffffff",
+        "pagination_color": "#ffffff",
+        "play_color": "#2c2a28",
+        "play_background_color": "#f9f9f9",
+        "play_hover_color": "#f9f9f9",
+        "play_background_hover_color": "#2c2a28"
+      }
+    },
+    "collection_list_1": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_list_1": {
+          "type": "collection",
+          "settings": {
+            "collection": "cozybay",
+            "image": "shopify://shop_images/1_bf682a77-3e70-4ab6-9852-4053fc07ed9e.jpg"
+          }
+        },
+        "collection_93nYWm": {
+          "type": "collection",
+          "settings": {
+            "collection": "soulnest",
+            "image": "shopify://shop_images/2.jpg"
+          }
+        },
+        "collection_list_3": {
+          "type": "collection",
+          "settings": {
+            "collection": "ultra",
+            "image": "shopify://shop_images/3_c6ee95c5-b04a-47b2-91e3-fd844897f7b1.jpg"
+          }
+        },
+        "collection_list_4": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "zzz",
+            "image": "shopify://shop_images/4_226088a5-0296-4e1d-ac34-94b095cb84e2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_list_1",
+        "collection_93nYWm",
+        "collection_list_3",
+        "collection_list_4"
+      ],
+      "settings": {
+        "label": "",
+        "heading": "COLLECTION LIST",
+        "link_url": "/",
+        "link_text": "",
+        "link_aria_label_text": "",
+        "text_alignment": "left",
+        "button_style": "primary",
+        "aspect_ratio": "portrait",
+        "text_position": "under_the_image",
+        "image_crop": "center",
+        "show_products_count": false,
+        "color_overlay": "#2c2a28",
+        "inside_the_image_text": "#f7f2ec",
+        "inside_the_image_text_hover": "#000000",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 0
+      }
+    },
+    "ante_freaturd_product_znC4YH": {
+      "type": "ante-freaturd-product",
+      "name": "Ante Freaturd Product",
+      "settings": {
+        "text_alignment": "left",
+        "heading": "Featured Product",
+        "subheading": "",
+        "text_content": "",
+        "button_label": "",
+        "button_aria_label": "",
+        "button_url": "/",
+        "button_style": "primary",
+        "is_show_border_top": false,
+        "is_show_border_bottom": false,
+        "border_color": "#e6e6e6",
+        "full_width": true,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 60,
+        "row_number": 3,
+        "product_list": [
+          "cloud-couch",
+          "famora-couch",
+          "pre-sale-007"
+        ]
+      }
+    },
+    "featured_products_DQ6cAE": {
+      "type": "featured-products",
+      "disabled": true,
+      "name": "Featured products",
+      "settings": {
+        "heading": "Featured products",
+        "subheading": "Check new products",
+        "description": "",
+        "product_list": [
+          "famora-couch",
+          "pre-sale-007",
+          "pre-sale-038",
+          "052",
+          "cloud-couch-off-white"
+        ],
+        "layout": "main",
+        "enable_cards_indent": false,
+        "link_url": "",
+        "link_text": "",
+        "link_aria_label_text": "",
+        "button_style": "primary",
+        "full_width": false,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0
+      }
+    },
+    "video_8XWfJh": {
+      "type": "video",
+      "disabled": true,
+      "name": "Video",
+      "settings": {
+        "label": "",
+        "if_show_img": true,
+        "heading": "Pack Small, Live Big",
+        "text_content": "<p>isn't just about saving space——it's about unlocking the freedom to live the way you want. With hipymo's premium compressed sofas,you can enjoy style,comfort, and flexibility without compromise.Delivered in a compact box and ready in minutes,our sofas bring more room for life,dreams,and the moments that matter.</p>",
+        "aspect_ratio": "sixteen-nine",
+        "image": "shopify://shop_images/52f0795146fde0f3a437de5a3e774b0c.jpg",
+        "video_type": "youtube_vimeo",
+        "external_video_url_desktop": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "external_video_url_mobile": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "full_width": true,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 30,
+        "offset_bottom_mobile": 30,
+        "title_color": "#000000",
+        "text_color": "#000000"
+      }
+    },
+    "ante_controller_images_JtAHF4": {
+      "type": "ante-controller-images",
+      "blocks": {
+        "block_zwdU6x": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/06_48af15cb-f599-4691-887f-2c146970c99b.jpg",
+            "image_mobile": "shopify://shop_images/1_a9b2aa97-22b6-4965-acac-5749d517d4a9.png",
+            "hub_heading": "About",
+            "heading": "<p>CozyBay – Your Haven in Small Spaces</p>",
+            "text": "<p>Designed for compact living, CozyBay brings warmth, comfort, and style into small apartments and cozy corners. “Cozy” reflects the inviting softness of home, while “Bay” symbolizes a safe harbor — a private, welcoming space where you can unwind, recharge, and truly feel at ease.</p>",
+            "tab": "CozyBay"
+          }
+        },
+        "block_KLdQhd": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/02_2e1882ef-524b-4b16-bc81-22e3f51c4ad6.jpg",
+            "image_mobile": "shopify://shop_images/02_ae9f6dd8-6819-45bd-b3bd-2c677ac2dfd4.jpg",
+            "hub_heading": "About",
+            "heading": "<p>SoulNest-The Heart of Your Home </p>",
+            "text": "<p>Crafted for everyday family living, SoulNest blends timeless style with inviting comfort.\"Soul\"represents the warmth and spirit of home, while \"Nest\"evokes a safe, nurturing space where memories are made. Perfect for regular living rooms, it's where comfort meets connection.</p>",
+            "tab": "SoulNest"
+          }
+        },
+        "block_hBVKWY": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/21.png",
+            "image_mobile": "shopify://shop_images/21.png",
+            "hub_heading": "About",
+            "heading": "<p><strong>Ultra – Luxury Without Limits</strong></p>",
+            "text": "<p>Designed for grand residences and refined interiors, Ultra embodies elegance, craftsmanship, and exceptional comfort. “Ultra” signifies going beyond the ordinary — delivering top-tier materials, meticulous detail, and a seating experience that defines sophistication. It’s the ultimate choice for those who demand the best.</p>",
+            "tab": "Ultra"
+          }
+        },
+        "block_LDRanR": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/800-3.jpg",
+            "hub_heading": "About",
+            "heading": "<p>Zzz - Designed for Restful Moments </p>",
+            "text": "<p>Inspired by the universal symbol of sleep, Zzz brings playful charm and pure relaxation to your bedroom. Its cozy design and soothing comfort create the perfect space to unwind,recharge,and drift into peaceful dreams —making bedtime the best time of the day.</p>",
+            "tab": "Zzz"
+          }
+        }
+      },
+      "block_order": [
+        "block_zwdU6x",
+        "block_KLdQhd",
+        "block_hBVKWY",
+        "block_LDRanR"
+      ],
+      "name": "Ante Controller Images",
+      "settings": {
+        "text_alignment": "left",
+        "heading": "",
+        "subheading": "",
+        "text_content": "",
+        "button_label": "",
+        "button_aria_label": "",
+        "button_url": "/",
+        "button_style": "primary",
+        "is_show_border_top": false,
+        "is_show_border_bottom": false,
+        "border_color": "#e6e6e6",
+        "full_width": true,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 60,
+        "bg_color": "#f5f5f5"
+      }
+    },
+    "featured_product": {
+      "type": "featured-product",
+      "blocks": {
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "vendor": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {
+            "inv_low_stock_text": "Low stock",
+            "inv_high_stock_text": "In stock, ready to ship",
+            "low_stock_threshold": 10
+          }
+        },
+        "countdown_timer": {
+          "type": "countdown_timer",
+          "settings": {
+            "text": "Sale ends in:",
+            "text_color": "#000000",
+            "timer_text_color": "#ffffff",
+            "timer_background_color": "#000000"
+          }
+        },
+        "options": {
+          "type": "options",
+          "settings": {
+            "show_labels": true,
+            "show_size_guide": true,
+            "variant_picker": "select",
+            "size_guide_option_name": "Size",
+            "size_guide_tab_general_name": "Dimensions",
+            "size_guide_tab_model_name": "Parameters of the model in the photo",
+            "size_guide_title": "Size guide",
+            "size_guide_text": "Size guide"
+          }
+        },
+        "quantity": {
+          "type": "quantity",
+          "settings": {
+            "show_label": true
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "sales_point_1": {
+          "type": "sales_point",
+          "settings": {
+            "sales_point_text": "Worldwide shipping"
+          }
+        },
+        "sales_point_2": {
+          "type": "sales_point",
+          "settings": {
+            "sales_point_text": "Delivery tracking"
+          }
+        },
+        "sales_point_3": {
+          "type": "sales_point",
+          "settings": {
+            "sales_point_text": "Safety packing"
+          }
+        },
+        "gift_wrap_product": {
+          "type": "gift_wrap_product",
+          "disabled": true,
+          "settings": {}
+        },
+        "ask_question": {
+          "type": "ask_question",
+          "disabled": true,
+          "settings": {
+            "button_label": "Ask a question",
+            "heading": "Have a question?",
+            "email_placeholder": "Email*",
+            "name_placeholder": "Name*",
+            "phone_placeholder": "Phone",
+            "product_url": "Reference URL*",
+            "message_placeholder": "Write message*",
+            "success_message": "Email has been successfully sent",
+            "submit_button_label": "Submit"
+          }
+        },
+        "add_to_cart": {
+          "type": "add_to_cart",
+          "settings": {
+            "button_type": "secondary",
+            "show_additional_buttons": true,
+            "show_enabled_payment_types": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "drawers": {
+          "type": "drawers",
+          "settings": {
+            "show_description": true,
+            "description_toggle_text": "Description",
+            "description_drawer_title": "Description",
+            "shipping_and_returns": "",
+            "shipping_and_returns_toggle_text": "Shipping and returns",
+            "shipping_and_returns_drawer_title": "Shipping and returns",
+            "custom_drawer_title_1": "Drawer heading",
+            "custom_drawer_text_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "badges",
+        "vendor",
+        "title",
+        "inventory_status",
+        "countdown_timer",
+        "options",
+        "quantity",
+        "price",
+        "sales_point_1",
+        "sales_point_2",
+        "sales_point_3",
+        "gift_wrap_product",
+        "ask_question",
+        "add_to_cart",
+        "pickup_availability",
+        "drawers"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "cloud-couch",
+        "is_lazy": true,
+        "is_zoom_enabled": true,
+        "show_borders": false,
+        "show_arrows_mobile": true,
+        "media_layout": "carousel",
+        "thumbnails_position": "bottom",
+        "media_height": "full_size",
+        "stacked_smooth_scroll": true,
+        "is_enable_media_scroller": false,
+        "show_taxes_included": true,
+        "show_pay_installments": true,
+        "show_share_buttons": true,
+        "border_color": "#e6e6e6",
+        "ui_button_color": "#000000",
+        "ui_button_background_color": "#ffffff",
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 40,
+        "offset_bottom_mobile": 0
+      }
+    },
+    "text_section": {
+      "type": "text-section",
+      "disabled": true,
+      "settings": {
+        "heading": "Shop The look",
+        "subheading": "",
+        "text_content": "",
+        "text_alignment": "center",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "Read more",
+        "show_less_text": "Show less",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 40,
+        "offset_top_mobile": 100,
+        "offset_bottom_mobile": 0
+      }
+    },
+    "shop_the_look": {
+      "type": "shop-the-look",
+      "blocks": {
+        "shop_the_look_0": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "point_position_top": 28,
+            "point_position_left": 30
+          }
+        },
+        "shop_the_look_1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "point_position_top": 60,
+            "point_position_left": 53
+          }
+        },
+        "shop_the_look_2": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "point_position_top": 50,
+            "point_position_left": 75
+          }
+        }
+      },
+      "block_order": [
+        "shop_the_look_0",
+        "shop_the_look_1",
+        "shop_the_look_2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "label": "",
+        "image_crop": "center",
+        "image_position": "left",
+        "is_lazy": true,
+        "is_point_animated": true,
+        "point_color": "#2c2a28",
+        "point_bg_color": "#f9f5f0",
+        "image_background": "#c4c4c4",
+        "image_border_color": "#e6e6e6",
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 40,
+        "offset_bottom_mobile": 100
+      }
+    },
+    "banner_3": {
+      "type": "banner",
+      "blocks": {
+        "banner_block": {
+          "type": "full_width",
+          "settings": {
+            "desktop_image_height": "600px",
+            "mobile_image_height": "350px",
+            "media_type": "html_video",
+            "label": "",
+            "heading": "Woman",
+            "text": "<p>RAINS is a Danish rainwear company founded in 2012. Based on an early initiative to interpret the traditional rubber raincoat in a novel way, the company has, since its foundation, grown into an accomplished international rainwear brand. A</p>",
+            "button_text": "Learn more",
+            "button_url": "/",
+            "button_aria": "Learn more",
+            "make_link_full_media": false,
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "image_border_width": 1,
+            "image_border_indent_desktop": 10,
+            "image_border_indent_mobile": 10,
+            "enable_lazy_load": true,
+            "external_video_url_desktop": "",
+            "external_video_url_mobile": "",
+            "content_alignment": "center",
+            "content_alignment_mobile": "center",
+            "block_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "banner_block"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_background": "#222222",
+        "label_color": "#ffffff",
+        "heading_color": "#ffffff",
+        "text_color": "#ffffff",
+        "link_color": "#d33636",
+        "button_background": "#ffffff",
+        "button_color": "#000000",
+        "button_border": "#ffffff",
+        "button_background_hover": "#000000",
+        "button_color_hover": "#ffffff",
+        "button_border_hover": "#ffffff",
+        "image_border_color": "#ffffff",
+        "button_circle_text_color": "#f9f5f0",
+        "button_circle_background_color": "rgba(0,0,0,0)",
+        "button_circle_border_color": "#f9f5f0",
+        "button_circle_outer_border_color": "#8b8885",
+        "button_circle_text_color_hover": "#2c2a28",
+        "button_circle_background_color_hover": "#eab88c",
+        "button_circle_border_color_hover": "#eab88c",
+        "button_circle_outer_border_color_hover": "#8b8885",
+        "full_width": false,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0
+      }
+    },
+    "gallery_carousel": {
+      "type": "gallery-carousel",
+      "blocks": {
+        "gallery_carousel_0": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "gallery_carousel_1": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "gallery_carousel_2": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "gallery_carousel_3": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "gallery_carousel_4": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "gallery_carousel_5": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "gallery_carousel_6": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "gallery_carousel_0",
+        "gallery_carousel_1",
+        "gallery_carousel_2",
+        "gallery_carousel_3",
+        "gallery_carousel_4",
+        "gallery_carousel_5",
+        "gallery_carousel_6"
+      ],
+      "disabled": true,
+      "settings": {
+        "label": "",
+        "heading": "PORTFOLIO",
+        "image_aspect_ratio": "square",
+        "image_crop": "center",
+        "enable_arrows": false,
+        "enable_autoplay": true,
+        "autoplay_speed": 3,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 30,
+        "offset_top_mobile": 70,
+        "offset_bottom_mobile": 100
+      }
+    },
+    "featured-blog": {
+      "type": "featured-blog",
+      "settings": {
+        "blog": "news",
+        "label": "",
+        "heading": "",
+        "link_text": "",
+        "link_aria_label_text": "",
+        "button_style": "primary",
+        "full_width": false,
+        "offset_top_desktop": 50,
+        "offset_bottom_desktop": 50,
+        "offset_top_mobile": 100,
+        "offset_bottom_mobile": 100,
+        "bg_color": "#f5f5f5",
+        "card_color": "#ffffff"
+      }
+    },
+    "faq_simple_3AzEEB": {
+      "type": "faq-simple",
+      "blocks": {
+        "category_cE7Cr7": {
+          "type": "category",
+          "settings": {
+            "heading": "Products & Purchasing"
+          }
+        },
+        "faq_item_LR9iLb": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Are Hipymo compression sofas durable?",
+            "text": "<p>Yes. Built with <strong>high-rebound foam</strong>, <strong>quality upholstery</strong>, and durable stitching, Hipymo sofas are engineered for long-term use and maintain their shape and comfort through daily wear.</p>"
+          }
+        },
+        "faq_item_3dLFNP": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Who are compression sofas ideal for?",
+            "text": "<p>Hipymo compression sofas are perfect for:<br/>Urban apartment dwellers needing space-saving comfort<br/>Renters or students who move frequently<br/>Minimalists seeking stylish, easy-to-assemble furniture<br/>First-time homeowners desiring affordable yet premium seeating solutions</p>"
+          }
+        },
+        "faq_item_WAXaqy": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How do I clean and care for my Hipymo sofa?",
+            "text": "<p>Spot clean spills with a damp cloth and mild detergent. Vacuuum regularly and rotate modular<br/>sections to promote even wear. For OutdoorEase models, usea cover when not in use to protect<br/>from weather.</p>"
+          }
+        },
+        "faq_item_9hRzgA": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What makes compression sofas different from traditional ones?",
+            "text": "<p>Compression sofas are shipped compact for convenience and mobility, while traditional sofas are bulkier and often require professional delivery. Hipymo offers tool-free assembly, lightweight delivery, and modern design for flexible living spaces.</p>"
+          }
+        },
+        "faq_item_MF98dC": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How should I measure my space before buying?",
+            "text": "<p>Measure length, depth, and ceiling height to ensure your sofa fits through doorways and stairwells. Leave walking space around it. Armless or slim-profile designs help maximize room layout while maintaining comfort.</p>"
+          }
+        },
+        "category_3NGagT": {
+          "type": "category",
+          "settings": {
+            "heading": "Shipping & Delivery"
+          }
+        },
+        "faq_item_TDYx3Y": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How long will shipping take?",
+            "text": "<p>In-stock items ship within 10 business days; pre-order items ship in 2–3 months.</p>"
+          }
+        },
+        "faq_item_7Un6cY": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Do you ship internationally?",
+            "text": "<p>Yes, we ship to multiple regions including North America via FedEx. We do not deliver to PO Boxes.</p>"
+          }
+        },
+        "faq_item_YtWiBN": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I change my delivery address after placing an order?",
+            "text": "<p>Address changes after shipment are not guaranteed and may incur additional fees or risks borne by the customer.</p>"
+          }
+        },
+        "faq_item_wciRbt": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What should I do if my package is delayed or cannot be delivered?",
+            "text": "<p>We are not responsible for delays due to incorrect information, recipient refusal, restricted areas, or force majeure events.</p>"
+          }
+        },
+        "faq_item_wgDNh8": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How can I track my order?",
+            "text": "<p>You will receive a tracking number via email or SMS once your order ships.</p>"
+          }
+        },
+        "category_PKkwcA": {
+          "type": "category",
+          "settings": {
+            "heading": "Receiving & Inspection"
+          }
+        },
+        "faq_item_pXXVXP": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Should I inspect my order upon arrival?",
+            "text": "<p>Yes. Please check your package before signing. If damaged, do not sign or unpack, and contact us immediately.</p>"
+          }
+        },
+        "faq_item_JnJX3K": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Do I need to record an unboxing video?",
+            "text": "<p>We strongly recommend recording your unboxing to support any claims for damage or missing parts.</p>"
+          }
+        },
+        "category_xy7HAD": {
+          "type": "category",
+          "settings": {
+            "heading": "Returns & Exchanges"
+          }
+        },
+        "faq_item_UqFD34": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What is your return policy?",
+            "text": "<p>We offer a 15-day return policy. Items must be unused, unassembled, with tags, and in original packaging.</p>"
+          }
+        },
+        "faq_item_TYrDkW": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I return an opened product?",
+            "text": "<p>If the packaging has been opened, the item is generally not eligible for return unless defective.</p>"
+          }
+        },
+        "faq_item_Dz9Raj": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What about pre-order returns?",
+            "text": "<p>Pre-orders can be refunded within 7 days of purchase. After that, they are non-refundable and non-returnable.</p>"
+          }
+        },
+        "faq_item_Vydgbz": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How do I start a return?",
+            "text": "<p>Contact <a>support@hipymo.com</a> for instructions and a return shipping label.</p>"
+          }
+        },
+        "faq_item_ax4qT3": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Who pays for return shipping?",
+            "text": "<p>If the product has no quality issues, the customer is responsible for the return shipping cost. If the product is defective or we sent the wrong item, Hipymo will cover the return shipping cost.</p>"
+          }
+        },
+        "faq_item_gKGzYU": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "When will I receive my refund?",
+            "text": "<p>Refunds will be processed within 10 business days after the returned product arrives and passes our inspection. Please note that your bank or credit card provider may take additional time to post the amount.</p>"
+          }
+        },
+        "category_AHR7ze": {
+          "type": "category",
+          "settings": {
+            "heading": "After-Sales Support"
+          }
+        },
+        "faq_item_pRbpke": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What if my item arrives damaged or defective?",
+            "text": "<p>Inspect your order immediately and contact us within 24 hours with photos or videos.</p>"
+          }
+        },
+        "faq_item_z7DgQz": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I exchange my sofa for another model?",
+            "text": "<p>Yes. The fastest way is to return your item and purchase the desired model separately after the return is accepted.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_cE7Cr7",
+        "faq_item_LR9iLb",
+        "faq_item_3dLFNP",
+        "faq_item_WAXaqy",
+        "faq_item_9hRzgA",
+        "faq_item_MF98dC",
+        "category_3NGagT",
+        "faq_item_TDYx3Y",
+        "faq_item_7Un6cY",
+        "faq_item_YtWiBN",
+        "faq_item_wciRbt",
+        "faq_item_wgDNh8",
+        "category_PKkwcA",
+        "faq_item_pXXVXP",
+        "faq_item_JnJX3K",
+        "category_xy7HAD",
+        "faq_item_UqFD34",
+        "faq_item_TYrDkW",
+        "faq_item_Dz9Raj",
+        "faq_item_Vydgbz",
+        "faq_item_ax4qT3",
+        "faq_item_gKGzYU",
+        "category_AHR7ze",
+        "faq_item_pRbpke",
+        "faq_item_z7DgQz"
+      ],
+      "disabled": true,
+      "name": "FAQs",
+      "settings": {
+        "label": "",
+        "heading": "FAQ",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "offset_top_desktop": 60,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 30,
+        "offset_bottom_mobile": 30
+      }
+    },
+    "gallery_carousel_UbPh98": {
+      "type": "gallery-carousel",
+      "blocks": {
+        "slide_WAtxd4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2025_8_18_14_07_35.png",
+            "link": ""
+          }
+        },
+        "slide_d3hzXA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/02_ae9f6dd8-6819-45bd-b3bd-2c677ac2dfd4.jpg",
+            "link": ""
+          }
+        },
+        "slide_fYnxwy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/66.jpg",
+            "link": ""
+          }
+        },
+        "slide_HtBB7H": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/800-3.jpg",
+            "link": ""
+          }
+        },
+        "slide_dPdewc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/img_v3_02p5_3feccf8d-c1b8-4ad6-b8b4-37becc53788g_ee294459-2aba-417a-bc4e-112634576c3e.jpg",
+            "link": ""
+          }
+        },
+        "slide_QXCBVR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/02_2e1882ef-524b-4b16-bc81-22e3f51c4ad6.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_WAtxd4",
+        "slide_d3hzXA",
+        "slide_fYnxwy",
+        "slide_HtBB7H",
+        "slide_dPdewc",
+        "slide_QXCBVR"
+      ],
+      "disabled": true,
+      "name": "Gallery carousel",
+      "settings": {
+        "label": "",
+        "heading": "大萨达",
+        "image_aspect_ratio": "square",
+        "image_crop": "top",
+        "enable_arrows": false,
+        "enable_autoplay": false,
+        "autoplay_speed": 3,
+        "offset_top_desktop": 20,
+        "offset_bottom_desktop": 20,
+        "offset_top_mobile": 20,
+        "offset_bottom_mobile": 20
+      }
+    },
+    "ante_gallery_carousel_RJwywf": {
+      "type": "ante-gallery-carousel",
+      "blocks": {
+        "slide_XVUB46": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/800-3_2b81a3f8-339f-4931-b691-a2d758c7ed59.jpg",
+            "link": "",
+            "info": "<p>I can’t believe how much I love this sofa! The foam is super supportive, which is perfect for someone like me who spends hours on the couch. It’s a simple design but looks so stylish in my living room. Plus, it was crazy easy to set up. Big win all around!</p>"
+          }
+        },
+        "slide_qjtTWz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/66.jpg",
+            "link": "",
+            "info": "<p>I’m seriously loving this sofa! The high-density foam feels super supportive but still comfy enough to sink into after a long day. The design is sleek and minimalist, so it fits right in with my decor. Super easy to put together too! Definitely worth it.</p>"
+          }
+        },
+        "slide_d3gqeM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/02_2e1882ef-524b-4b16-bc81-22e3f51c4ad6.jpg",
+            "link": "",
+            "info": "<p>I’m super impressed with this sofa. The foam offers just the right amount of support while still being comfy to sit on for a while. It looks great with my other furniture, and the setup was super easy. Plus, delivery was smooth, which made the whole experience so much better.</p>"
+          }
+        },
+        "slide_nYC6PC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/img_v3_02p5_3feccf8d-c1b8-4ad6-b8b4-37becc53788g_131f7372-26c3-4ead-a72e-f3851de8955b.jpg",
+            "link": "",
+            "info": "<p>This sofa is fantastic! The fabric feels really premium and comfy. Setting it up was so easy; I just unwrapped the vacuum-sealed package, and it was ready to go. he only thing is, it took a little time for the wrinkles to go away after unpacking, but no big deal. Very happy with it.</p>"
+          }
+        },
+        "slide_dQGVhz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/7.jpg",
+            "link": "",
+            "info": "<p>I went with the white version, and it’s so beautiful! The lines are crisp and smooth, and it just makes my living room look more sophisticated. I didn’t have to do much to make it work—it fits in perfectly with all my furniture. Love how effortless it is!</p>"
+          }
+        },
+        "slide_aBGmp7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/08.jpg",
+            "link": "",
+            "info": "<p>The H017 two-seater sofa is exactly what I needed! I love that I can separate the pieces if I want more room or put them together for a cozy setup. I even put a little table between them for afternoon tea—makes relaxing so much better! It’s comfy, and the design is spot-on.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_XVUB46",
+        "slide_qjtTWz",
+        "slide_d3gqeM",
+        "slide_nYC6PC",
+        "slide_dQGVhz",
+        "slide_aBGmp7"
+      ],
+      "name": "Ante Gallery carousel",
+      "settings": {
+        "label": "",
+        "heading": "",
+        "enable_autoplay": true,
+        "autoplay_speed": 3,
+        "pc_row": 4.5,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 20,
+        "offset_bottom_mobile": 20,
+        "bg_color": "#ab9b81",
+        "color": "#ffffff",
+        "title": "#Hipymo",
+        "info": "Share to get featured follow us @Hipymo_global"
+      }
+    },
+    "benefits_ante_7UKR6c": {
+      "type": "benefits-ante",
+      "blocks": {
+        "benefits_item_Ymj6kD": {
+          "type": "benefits_item",
+          "settings": {
+            "heading": "200,000+",
+            "text": "Customers",
+            "image": "shopify://shop_images/customers.svg",
+            "block_link": "",
+            "button_aria": ""
+          }
+        },
+        "benefits_item_bTr4H6": {
+          "type": "benefits_item",
+          "settings": {
+            "heading": "25 Years",
+            "text": "In Business",
+            "image": "shopify://shop_images/1_8504db87-7d69-4e02-8e0e-e0290793f598.svg",
+            "block_link": "",
+            "button_aria": ""
+          }
+        },
+        "benefits_item_X9PBjt": {
+          "type": "benefits_item",
+          "settings": {
+            "heading": "Over Million",
+            "text": "Units Sold",
+            "image": "shopify://shop_images/sofa-line.svg",
+            "block_link": "",
+            "button_aria": ""
+          }
+        },
+        "benefits_item_VnUmE6": {
+          "type": "benefits_item",
+          "settings": {
+            "heading": "Free",
+            "text": "Shipping",
+            "image": "shopify://shop_images/fe4b7e8348583770da396448aed80a83.svg",
+            "block_link": "",
+            "button_aria": ""
+          }
+        }
+      },
+      "block_order": [
+        "benefits_item_Ymj6kD",
+        "benefits_item_bTr4H6",
+        "benefits_item_X9PBjt",
+        "benefits_item_VnUmE6"
+      ],
+      "name": "Ante Benefits",
+      "settings": {
+        "section_background": "#f5f5f5",
+        "heading_color": "#262626",
+        "text_color": "#262626",
+        "border_color": "#000000",
+        "outline_color": "#d2d2d2",
+        "full_width": false,
+        "show_borders": true,
+        "if_right_border": true,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0,
+        "layout_img": "left"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "full_width": false,
+        "if_laout": true,
+        "layout": "one_column",
+        "heading": "",
+        "subheading": "Subscribe to our emails",
+        "success_message": "Thanks for subscribing",
+        "text": "<p>Be the first to know about new collections and special offers</p>",
+        "image_position": "left",
+        "email_placeholder": "Your email",
+        "button_aria_label": "Submit",
+        "section_background": "#ffffff",
+        "heading_color": "#757575",
+        "text_color": "#000000",
+        "content_color": "#c1bdb9",
+        "input_label_color": "#c1bdb9",
+        "input_color": "#000000",
+        "input_border_color": "#000000",
+        "button_circle_text_color": "#f9f5f0",
+        "button_circle_background_color": "rgba(0,0,0,0)",
+        "button_circle_border_color": "#f9f5f0",
+        "button_circle_outer_border_color": "#8b8885",
+        "button_circle_text_color_hover": "#2c2a28",
+        "button_circle_background_color_hover": "#eab88c",
+        "button_circle_border_color_hover": "#eab88c",
+        "button_circle_outer_border_color_hover": "#8b8885",
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "collection_list_1",
+    "ante_freaturd_product_znC4YH",
+    "featured_products_DQ6cAE",
+    "video_8XWfJh",
+    "ante_controller_images_JtAHF4",
+    "featured_product",
+    "text_section",
+    "shop_the_look",
+    "banner_3",
+    "gallery_carousel",
+    "featured-blog",
+    "faq_simple_3AzEEB",
+    "gallery_carousel_UbPh98",
+    "ante_gallery_carousel_RJwywf",
+    "benefits_ante_7UKR6c",
+    "newsletter"
+  ]
+}

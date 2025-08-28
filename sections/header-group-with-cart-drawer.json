@@ -1,0 +1,204 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "disabled": true,
+      "settings": {
+        "enable_autoplay": true,
+        "autoplay_speed": 5,
+        "show_announcement_bar": true,
+        "layout": "simple_text",
+        "background_image_type": "cover",
+        "show_bottom_border": true,
+        "show_socials": false,
+        "additional_menu": "",
+        "text_content_desktop": "<p>hipymo: Comfort Meets Convenience | Premium Compressed Sofas for Modern Living</p>",
+        "text_content_mobile": "",
+        "text_desktop": "",
+        "text_mobile": "",
+        "timer_year": 0,
+        "timer_month": "2",
+        "timer_day": "1",
+        "timer_hour": "0",
+        "timer_timezone": "+0",
+        "button_text": "Shop Now",
+        "button_link": "/",
+        "background_color": "#000000",
+        "background_overlay": "",
+        "border_bottom_color": "#e6e6e6",
+        "text_color": "#ffffff",
+        "link_color": "#ffffff",
+        "button_color": "#ffffff",
+        "button_background": "#000000",
+        "button_border": "#ffffff",
+        "button_cross_color": "#ffffff",
+        "button_color_hover": "#000000",
+        "button_background_hover": "#ffffff",
+        "button_border_hover": "#ffffff",
+        "button_cross_hover": "#757575",
+        "social_icon_color": "#000000",
+        "social_icon_color_hover": "#727272"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "megamenu": {
+          "type": "megamenu",
+          "settings": {
+            "menu_handle": "collections",
+            "menu_type": "tabs",
+            "badge_text": "",
+            "badge_text_color": "#ffffff",
+            "badge_background_color": "#cc0000",
+            "image": "shopify://shop_images/FUhaoduo0164_86d38542-d1a0-440c-a232-85cf71bd517e.webp",
+            "label": "",
+            "heading": "",
+            "link": "/",
+            "link_label": "",
+            "media_rounded_corners": false,
+            "product1": "",
+            "image2": "shopify://shop_images/FUhaoduo0166_2bfb2714-06dd-4e20-a98e-f38c8018b1b3.webp",
+            "label2": "",
+            "heading2": "",
+            "link2": "/",
+            "link_label2": "",
+            "media_rounded_corners2": false,
+            "product2": ""
+          }
+        },
+        "megamenu-images": {
+          "type": "megamenu-images",
+          "settings": {
+            "menu_handle": "",
+            "badge_text": "",
+            "badge_text_color": "#ffffff",
+            "badge_background_color": "#cc0000",
+            "label": "",
+            "heading": "RIGGS HOTEL",
+            "link": "/",
+            "link_label": "RIGGS WASHINGTON DC",
+            "media_rounded_corners": false,
+            "product1": "",
+            "label2": "",
+            "heading2": "MIO GALLERY",
+            "link2": "/",
+            "link_label2": "MIO GALLERY. STUDIO",
+            "media_rounded_corners2": false,
+            "product2": "",
+            "label3": "",
+            "heading3": "FULLSENCE AGENCY",
+            "link3": "/",
+            "link_label3": "FULLSENCE AGENCY",
+            "media_rounded_corners3": false,
+            "product3": "",
+            "label4": "",
+            "heading4": "And more...",
+            "link4": "/",
+            "link_label4": "Show All Projects",
+            "media_rounded_corners4": false,
+            "product4": ""
+          }
+        }
+      },
+      "block_order": [
+        "megamenu",
+        "megamenu-images"
+      ],
+      "settings": {
+        "header_type": "sticky",
+        "enable_transparent_header": false,
+        "enable_bottom_border": true,
+        "enable_mega_menu_borders": true,
+        "is_show_box_shadow": true,
+        "is_show_language_selector": false,
+        "is_show_country_selector": false,
+        "logo": "shopify://shop_images/20250820-150755.png",
+        "logo_transparent": "shopify://shop_images/20250820-150755.png",
+        "logo_width": 175,
+        "logo_position": "middle",
+        "menu": "main-menu",
+        "menu_type_desktop": "both",
+        "open_menu_type": "hover",
+        "make_first_lvl_clickable": false,
+        "header_bg": "#ffffff",
+        "mobile_menu_bg": "#ffffff",
+        "text_color": "#000000",
+        "text_color_secondary": "#000000",
+        "text_color_transparent": "#ffffff",
+        "icon_color": "#000000",
+        "icon_color_hover": "#000000",
+        "icon_color_transparent": "#ffffff",
+        "count_text_color": "#ffffff",
+        "count_text_color_transparent": "#000000",
+        "count_text_bg": "#000000",
+        "count_text_bg_transparent": "#ffffff",
+        "border_color": "#e6e6e6",
+        "megamenu_image_text": "#ffffff",
+        "megamenu_image_link_label": "#2c2a28",
+        "megamenu_image_link_label_background": "#eab88c",
+        "megamenu_overlay_color": "linear-gradient(89deg, rgba(8, 8, 8, 0.2), rgba(8, 8, 8, 0.2) 98%)",
+        "megamenu_gradient_color": "#2c2a28"
+      }
+    },
+    "cart-drawer": {
+      "type": "cart-drawer",
+      "blocks": {
+        "richtext": {
+          "type": "richtext",
+          "settings": {
+            "text": "If you need unique project, please Contact Us",
+            "text_color": "#ffffff",
+            "text_background_color": "#000000"
+          }
+        },
+        "items": {
+          "type": "items",
+          "settings": {}
+        },
+        "upsell": {
+          "type": "upsell",
+          "settings": {
+            "heading": "You might also like",
+            "product_list": []
+          }
+        },
+        "selling": {
+          "type": "shipping",
+          "settings": {
+            "amount": 500,
+            "message": "You are only ${amount} away from free shipping",
+            "congratulatory_message": "You got free shipping"
+          }
+        }
+      },
+      "block_order": [
+        "richtext",
+        "items",
+        "upsell",
+        "selling"
+      ],
+      "settings": {
+        "heading": "Your cart",
+        "show_cart_items_count": true,
+        "show_gift_wrap_button": false
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "cart-drawer"
+  ]
+}

@@ -1,0 +1,266 @@
+.page-width {
+    max-width: var(--global-container-width);
+    margin: 0 auto;
+}
+
+
+/* 手风琴 */
+.product .accordion {
+    overflow: hidden;
+    background: #f5f5f5;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.product .accordion-header {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    border-bottom: 1px solid #26262650;
+}
+
+.product .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding: 10px;
+}
+
+.product .accordion-content p {
+    padding: 10px;
+}
+
+.line {
+    width: 20%;
+    height: 4px;
+    margin-top: 20px;
+    background: #AB9B81;
+    transform: scaleX(0);
+    transform-origin: left center;
+    /* 从左开始伸展 */
+    transition: transform 1s ease;
+}
+
+.line.lin-animation {
+    transform: scaleX(1);
+}
+
+.product .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.icon .vertical {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform-origin: center;
+}
+
+.product .accordion svg {
+    pointer-events: none;
+}
+
+.product .accordion.open .vertical {
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+/* 手风琴 */
+
+button.chat-toggle.chat-toggle--text-button {
+    font-weight: 400 !important;
+}
+
+#MainContent .product-card__main {
+    background-color: #F4F3F1;
+}
+
+#MainContent .product hr {
+    display: none;
+}
+
+#MainContent .newsletter {
+    padding: 100px 0;
+}
+
+.product-options .product-options__swatch,
+.product-options .product-options__default-options,
+.product-price {
+    margin: 20px 0;
+}
+
+#MainContent .product-card .product-card__vendor,
+#MainContent .product-card__price {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#MainContent .product-card__footer,
+#MainContent .newsletter .newsletter__content {
+    padding: 0;
+}
+
+.flow-us {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--menu-headings-color);
+}
+
+#MainContent .product-card .product-card__image-wrapper {
+    padding-top: 50%;
+}
+
+#MainContent .video__container .video__play-button {
+    width: 44px;
+    height: 44px;
+}
+
+.footer .footer__container .footer__main-content {
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--header-border-color);
+}
+
+.footer .footer__text .footer_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer .footer__navigation-item .footer__navigation-heading {
+    margin-bottom: 24px;
+    font-weight: 600;
+
+}
+
+#MainContent .product-card__meta-info .product-card__swatches {
+    padding-left: 5px;
+}
+
+#MainContent .product-card__meta-info .product-card__swatches button {
+    width: 20px;
+    height: 20px;
+}
+
+#MainContent .product-card__label {
+    padding: 5px 15px;
+    font-size: 10px;
+}
+
+#MainContent .product-card__meta-info .product-card__swatches button,
+#MainContent .product-card__meta-info .product-card__swatches button span {
+    border-radius: 0;
+}
+
+#MainContent .product-card__meta-info .product-card__swatches button span {
+    background-position: unset;
+    box-shadow: unset;
+}
+
+#MainContent .slideshow .slideshow__slide-content {
+    align-items: var(--layout-content);
+    padding: 0;
+    justify-content: var(--justify-content);
+    margin: auto;
+}
+#MainContent  .faq-simple :is(h3,.h3){
+    font-size: 1.25rem;
+}
+#MainContent .slideshow__slide-content-inner {
+    padding: 0;
+    max-width: 780px;
+}
+
+.ante-footer__copyright {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+.ante-footer__copyright .footer__copyright a {
+    text-decoration: none;
+
+}
+
+.ante-footer__copyright .footer__copyright {
+    width: unset;
+    margin-top: 0;
+}
+
+.footer__text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#MainContent :is(h1, .h1),
+#MainContent :is(h2, .h2),
+#MainContent :is(h3, .h3) {
+    font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+    #MainContent :is(h1, .h1) {
+        font-size: 46px;
+        font-weight: 600;
+    }
+
+    .footer__text {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #MainContent :is(h2, .h2) {
+        font-size: 46px;
+        font-weight: 600;
+    }
+
+    #MainContent :is(h3, .h3) {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    #MainContent :is(h4, .h4) {
+        font-size: 20px;
+    }
+
+    #MainContent .slideshow .slideshow__slide-content.slideshow__slide-content--left,
+    .slideshow .slideshow__slide-content.slideshow__slide-content--center,
+    #MainContent .slideshow .slideshow__slide-content.slideshow__slide-content--right {
+        max-width: 1440px;
+    }
+
+    #MainContent .slideshow .slideshow__slide-description {
+        font-size: 20px;
+    }
+
+    #MainContent .slideshow__slide-button-wrapper .button {
+        font-size: 18px;
+
+    }
+
+    #MainContent .collection-list__card-title {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    #MainContent .collection-list .collection-list__col {
+        width: 25%;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    #MainContent .collection-list .collection-list__header {
+        margin-bottom: 50px;
+    }
+}

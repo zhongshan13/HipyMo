@@ -1,0 +1,202 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "default-page": {
+      "type": "default-page-template",
+      "settings": {
+        "offset_top_desktop": 60,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 30,
+        "offset_bottom_mobile": 30
+      }
+    },
+    "faq_simple_H7XKdx": {
+      "type": "faq-simple",
+      "blocks": {
+        "category_KC4Lnf": {
+          "type": "category",
+          "settings": {
+            "heading": "General"
+          }
+        },
+        "faq_item_9xpfjX": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What products do we sell?",
+            "text": "<p>We sell many useful products.</p><p>You can view them on the collection page.</p>"
+          }
+        },
+        "faq_item_MHXBTc": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How many products are in the store?",
+            "text": "<p>We have a wide variety of products in stock.</p>"
+          }
+        },
+        "category_K3tLBc": {
+          "type": "category",
+          "settings": {
+            "heading": "Shipping"
+          }
+        },
+        "faq_item_jBFfx3": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What is the delivery time?",
+            "text": "<p>Delivery time on average 3 days</p>"
+          }
+        },
+        "faq_item_jhqUyk": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Do we have local pickup?",
+            "text": "<p>Yes, we have the option of self-pickup from our stores.</p><p>For detailed information please contact us.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_KC4Lnf",
+        "faq_item_9xpfjX",
+        "faq_item_MHXBTc",
+        "category_K3tLBc",
+        "faq_item_jBFfx3",
+        "faq_item_jhqUyk"
+      ],
+      "disabled": true,
+      "name": "FAQ",
+      "settings": {
+        "label": "",
+        "heading": "FAQ",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "offset_top_desktop": 60,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 30,
+        "offset_bottom_mobile": 30
+      }
+    },
+    "swipe_Ynn7LT": {
+      "type": "swipe",
+      "blocks": {
+        "content_Dq6J3e": {
+          "type": "content",
+          "settings": {
+            "content_image": "shopify://shop_images/20250821-144804.png",
+            "content_heading": "Smart sofas for modern living",
+            "content_text": "hipymo brings a new way to enjoy comfort with our premium compressed sofas. “Pack Small” reflects their compact, lightweight design for easy moving and space-saving living. “Live Big” speaks to the comfort, style, and quality that expand your everyday life — modern, versatile, and made for the way you live."
+          }
+        },
+        "content_VAkpya": {
+          "type": "content",
+          "settings": {
+            "content_image": "shopify://shop_images/20250821-144808.png",
+            "content_heading": "From Our Factory, Direct to Your Home",
+            "content_text": "At hipymo, we design and manufacture our sofas in our own factory, ensuring every detail meets our high standards. By selling directly, we bring you premium quality at a better value — no middlemen, just exceptional comfort delivered straight to your door"
+          }
+        },
+        "content_EttEKP": {
+          "type": "content",
+          "settings": {
+            "content_image": "shopify://shop_images/20250821-144800.png",
+            "content_heading": "Smart Compression, Smarter Delivery",
+            "content_text": "hipymo sofas are expertly compressed using advanced vacuum and wrapping technology, reducing volume by up to 90% for easier transport and storage. Once unboxed, they quickly expand to full size, delivering premium comfort with maximum convenience — from our factory floor to your living room."
+          }
+        }
+      },
+      "block_order": [
+        "content_Dq6J3e",
+        "content_VAkpya",
+        "content_EttEKP"
+      ],
+      "name": "Swipe",
+      "settings": {
+        "enable_lazy_load": true,
+        "heading": "hipymo — From Smart Design to Your Home",
+        "subheading": "Subheading",
+        "background_color": "#AB9B81",
+        "heading_color": "#ffffff",
+        "subheading_color": "#ffffff",
+        "block_heading_color": "#ffffff",
+        "text_color": "#ffffff",
+        "accents_spot_color": "#d29e72",
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0
+      }
+    },
+    "ante_number_Km3LNY": {
+      "type": "ante-number",
+      "blocks": {
+        "number_adqTcE": {
+          "type": "number",
+          "settings": {
+            "number": "20",
+            "text": "YEAR OF EXPERIENCES"
+          }
+        },
+        "number_YAPN38": {
+          "type": "number",
+          "settings": {
+            "number": "350",
+            "text": "PROFESSIONAL TEAM"
+          }
+        },
+        "number_jHCL9k": {
+          "type": "number",
+          "settings": {
+            "number": "8K",
+            "text": "CUSTOMER REVIEWS"
+          }
+        },
+        "number_HEtRBX": {
+          "type": "number",
+          "settings": {
+            "number": "70K",
+            "text": "PRODUCTS SOLD"
+          }
+        }
+      },
+      "block_order": [
+        "number_adqTcE",
+        "number_YAPN38",
+        "number_jHCL9k",
+        "number_HEtRBX"
+      ],
+      "name": "Ante Number",
+      "settings": {
+        "text_alignment": "left",
+        "heading": "",
+        "subheading": "",
+        "text_content": "",
+        "button_label": "",
+        "button_aria_label": "",
+        "button_url": "/",
+        "button_style": "primary",
+        "is_show_border_top": false,
+        "is_show_border_bottom": false,
+        "border_color": "#e6e6e6",
+        "full_width": true,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 50,
+        "offset_top_mobile": 40,
+        "offset_bottom_mobile": 60
+      }
+    }
+  },
+  "order": [
+    "default-page",
+    "faq_simple_H7XKdx",
+    "swipe_Ynn7LT",
+    "ante_number_Km3LNY"
+  ]
+}
