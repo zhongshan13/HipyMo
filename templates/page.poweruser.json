@@ -32,6 +32,7 @@
             "text_alignment_inside_block": "center",
             "content_layout": "center",
             "content_alignment": "slideshow__slide-content--center",
+            "just_content": "start",
             "background_color": "#757575",
             "background_content": "",
             "label_color": "#ffffff",
@@ -42,7 +43,7 @@
             "button_border_color": "#ab9b81",
             "button_text_color_hover": "#000000",
             "button_background_color_hover": "#ffffff",
-            "button_border_color_hover": "#000000",
+            "button_border_color_hover": "#ffffff",
             "second_button_text_color": "#000000",
             "second_button_background_color": "#ffffff",
             "second_button_border_color": "#ffffff",
@@ -127,6 +128,22 @@
             "title": "Follow on X",
             "content": "<p>200 points</p>"
           }
+        },
+        "card_KbUhF6": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/21b627e79f6a725d916e39c3e74571e6.svg",
+            "title": "Referring Friend reward",
+            "content": "<p>When the referred person successfully places an order, the referrer will receive <strong>2,000 points</strong>.</p>"
+          }
+        },
+        "card_3jxK7f": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/c5a779f889dfd54a7bea7a93829c1294.svg",
+            "title": "Referred friend reward",
+            "content": "<p>The referred person will receive a <strong>10% off coupon</strong>.</p>"
+          }
         }
       },
       "block_order": [
@@ -134,7 +151,9 @@
         "card_kBiiRa",
         "card_aCWc9m",
         "card_AwQaeR",
-        "card_9f9FBk"
+        "card_9f9FBk",
+        "card_KbUhF6",
+        "card_3jxK7f"
       ],
       "name": "Ante Reward Card",
       "settings": {

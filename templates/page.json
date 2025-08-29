@@ -18,60 +18,209 @@
         "offset_bottom_mobile": 30
       }
     },
-    "faq_simple_H7XKdx": {
+    "faq_simple_yJdBwE": {
       "type": "faq-simple",
       "blocks": {
-        "category_KC4Lnf": {
+        "category_Jyhh6m": {
           "type": "category",
           "settings": {
-            "heading": "General"
+            "heading": "Products & Purchasing"
           }
         },
-        "faq_item_9xpfjX": {
+        "faq_item_E44Wn9": {
           "type": "faq_item",
           "settings": {
-            "heading": "What products do we sell?",
-            "text": "<p>We sell many useful products.</p><p>You can view them on the collection page.</p>"
+            "heading": "Are Hipymo compression sofas durable?",
+            "text": "<p>Yes. Built with <strong>high-rebound foam</strong>, <strong>quality upholstery</strong>, and durable stitching, Hipymo sofas are engineered for long-term use and maintain their shape and comfort through daily wear.</p>"
           }
         },
-        "faq_item_MHXBTc": {
+        "faq_item_WFwfKT": {
           "type": "faq_item",
           "settings": {
-            "heading": "How many products are in the store?",
-            "text": "<p>We have a wide variety of products in stock.</p>"
+            "heading": "Who are compression sofas ideal for?",
+            "text": "<p>Hipymo compression sofas are perfect for:<br/>Urban apartment dwellers needing space-saving comfort<br/>Renters or students who move frequently<br/>Minimalists seeking stylish, easy-to-assemble furniture<br/>First-time homeowners desiring affordable yet premium seeating solutions</p>"
           }
         },
-        "category_K3tLBc": {
+        "faq_item_Bzc6pk": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How do I clean and care for my Hipymo sofa?",
+            "text": "<p>Spot clean spills with a damp cloth and mild detergent. Vacuuum regularly and rotate modular<br/>sections to promote even wear. For OutdoorEase models, usea cover when not in use to protect<br/>from weather.</p>"
+          }
+        },
+        "faq_item_rbMECR": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What makes compression sofas different from traditional ones?",
+            "text": "<p>Compression sofas are shipped compact for convenience and mobility, while traditional sofas are bulkier and often require professional delivery. Hipymo offers tool-free assembly, lightweight delivery, and modern design for flexible living spaces.</p>"
+          }
+        },
+        "faq_item_pxMkPK": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How should I measure my space before buying?",
+            "text": "<p>Measure length, depth, and ceiling height to ensure your sofa fits through doorways and stairwells. Leave walking space around it. Armless or slim-profile designs help maximize room layout while maintaining comfort.</p>"
+          }
+        },
+        "category_tehCJg": {
           "type": "category",
           "settings": {
-            "heading": "Shipping"
+            "heading": "Shipping & Delivery"
           }
         },
-        "faq_item_jBFfx3": {
+        "faq_item_ENzkeR": {
           "type": "faq_item",
           "settings": {
-            "heading": "What is the delivery time?",
-            "text": "<p>Delivery time on average 3 days</p>"
+            "heading": "How long will shipping take?",
+            "text": "<p>In-stock items ship within 10 business days; pre-order items ship in 2–3 months.</p>"
           }
         },
-        "faq_item_jhqUyk": {
+        "faq_item_Dac8LV": {
           "type": "faq_item",
           "settings": {
-            "heading": "Do we have local pickup?",
-            "text": "<p>Yes, we have the option of self-pickup from our stores.</p><p>For detailed information please contact us.</p>"
+            "heading": "Do you ship internationally?",
+            "text": "<p>Yes, we ship to multiple regions including North America via FedEx. We do not deliver to PO Boxes.</p>"
+          }
+        },
+        "faq_item_Tf7Vgx": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I change my delivery address after placing an order?",
+            "text": "<p>Address changes after shipment are not guaranteed and may incur additional fees or risks borne by the customer.</p>"
+          }
+        },
+        "faq_item_nUxbgF": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What should I do if my package is delayed or cannot be delivered?",
+            "text": "<p>We are not responsible for delays due to incorrect information, recipient refusal, restricted areas, or force majeure events.</p>"
+          }
+        },
+        "faq_item_Lhh9yH": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How can I track my order?",
+            "text": "<p>You will receive a tracking number via email or SMS once your order ships.</p>"
+          }
+        },
+        "category_QnTRa9": {
+          "type": "category",
+          "settings": {
+            "heading": "Receiving & Inspection"
+          }
+        },
+        "faq_item_MFNDQD": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Should I inspect my order upon arrival?",
+            "text": "<p>Yes. Please check your package before signing. If damaged, do not sign or unpack, and contact us immediately.</p>"
+          }
+        },
+        "faq_item_xPDHLC": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Do I need to record an unboxing video?",
+            "text": "<p>We strongly recommend recording your unboxing to support any claims for damage or missing parts.</p>"
+          }
+        },
+        "category_qpVzUt": {
+          "type": "category",
+          "settings": {
+            "heading": "Returns & Exchanges"
+          }
+        },
+        "faq_item_AVXJT7": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What is your return policy?",
+            "text": "<p>We offer a 15-day return policy. Items must be unused, unassembled, with tags, and in original packaging.</p>"
+          }
+        },
+        "faq_item_Cd438Y": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I return an opened product?",
+            "text": "<p>If the packaging has been opened, the item is generally not eligible for return unless defective.</p>"
+          }
+        },
+        "faq_item_73GjHi": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What about pre-order returns?",
+            "text": "<p>Pre-orders can be refunded within 7 days of purchase. After that, they are non-refundable and non-returnable.</p>"
+          }
+        },
+        "faq_item_VGEJRK": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How do I start a return?",
+            "text": "<p>Contact <a>support@hipymo.com</a> for instructions and a return shipping label.</p>"
+          }
+        },
+        "faq_item_KhKwwt": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Who pays for return shipping?",
+            "text": "<p>If the product has no quality issues, the customer is responsible for the return shipping cost. If the product is defective or we sent the wrong item, Hipymo will cover the return shipping cost.</p>"
+          }
+        },
+        "faq_item_TRP4br": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "When will I receive my refund?",
+            "text": "<p>Refunds will be processed within 10 business days after the returned product arrives and passes our inspection. Please note that your bank or credit card provider may take additional time to post the amount.</p>"
+          }
+        },
+        "category_pjkhpd": {
+          "type": "category",
+          "settings": {
+            "heading": "After-Sales Support"
+          }
+        },
+        "faq_item_68Nkb6": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What if my item arrives damaged or defective?",
+            "text": "<p>Inspect your order immediately and contact us within 24 hours with photos or videos.</p>"
+          }
+        },
+        "faq_item_p7MFEp": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I exchange my sofa for another model?",
+            "text": "<p>Yes. The fastest way is to return your item and purchase the desired model separately after the return is accepted.</p>"
           }
         }
       },
       "block_order": [
-        "category_KC4Lnf",
-        "faq_item_9xpfjX",
-        "faq_item_MHXBTc",
-        "category_K3tLBc",
-        "faq_item_jBFfx3",
-        "faq_item_jhqUyk"
+        "category_Jyhh6m",
+        "faq_item_E44Wn9",
+        "faq_item_WFwfKT",
+        "faq_item_Bzc6pk",
+        "faq_item_rbMECR",
+        "faq_item_pxMkPK",
+        "category_tehCJg",
+        "faq_item_ENzkeR",
+        "faq_item_Dac8LV",
+        "faq_item_Tf7Vgx",
+        "faq_item_nUxbgF",
+        "faq_item_Lhh9yH",
+        "category_QnTRa9",
+        "faq_item_MFNDQD",
+        "faq_item_xPDHLC",
+        "category_qpVzUt",
+        "faq_item_AVXJT7",
+        "faq_item_Cd438Y",
+        "faq_item_73GjHi",
+        "faq_item_VGEJRK",
+        "faq_item_KhKwwt",
+        "faq_item_TRP4br",
+        "category_pjkhpd",
+        "faq_item_68Nkb6",
+        "faq_item_p7MFEp"
       ],
       "disabled": true,
-      "name": "FAQ",
+      "name": "FAQs",
       "settings": {
         "label": "",
         "heading": "FAQ",
@@ -87,6 +236,6 @@
   },
   "order": [
     "default-page",
-    "faq_simple_H7XKdx"
+    "faq_simple_yJdBwE"
   ]
 }

@@ -85,18 +85,18 @@
             "background_opacity": 35
           }
         },
-        "fold_JTqAj8": {
+        "fold_H8EMrM": {
           "type": "fold",
           "settings": {
             "title": "Description",
             "text": "<p>{{ product.metafields.custom.description | metafield_tag }}</p>"
           }
         },
-        "fold_H8EMrM": {
+        "fold_JTqAj8": {
           "type": "fold",
           "settings": {
-            "title": "Description",
-            "text": "<p>{{ product.metafields.custom.description | metafield_tag }}</p>"
+            "title": "Return & Exchange Policy",
+            "text": "<p>{{ product.metafields.custom.return_exchange_policy | metafield_tag }}</p>"
           }
         },
         "quantity": {
@@ -196,8 +196,8 @@
         "custom_field",
         "judge_me_reviews_preview_badge_Wa3nA6",
         "inventory_status",
-        "fold_JTqAj8",
         "fold_H8EMrM",
+        "fold_JTqAj8",
         "quantity",
         "sales_point_1",
         "sales_point_2",
@@ -247,7 +247,7 @@
         "image_picker": "shopify://shop_images/20250821-182513.png",
         "show_images": true,
         "spe_title": "Product Dimensions",
-        "spe_text": "<ul><li>GENERAL DIMENSIONS,85\"L×74\"W×75.25H</li><li>CAPACITY,900 Ibs</li><li>-----</li><li>GENERAL DIMENSIONS,95\"L×84\"W×95.25H</li><li>CAPACITY,700 Ibs</li><li>-----</li><li>GENERAL DIMENSIONS,75\"L×74\"W×48.25H</li><li>CAPACITY,1000 Ibs</li><li>-----</li><li>GENERAL DIMENSIONS,65\"L×44\"W×89.25H</li><li>CAPACITY,600 Ibs</li></ul>",
+        "spe_text": "{{ product.metafields.custom.parameter | metafield_tag }}",
         "is_show_border_top": false,
         "is_show_border_bottom": false,
         "border_color": "#e6e6e6",
@@ -339,11 +339,11 @@
       "settings": {
         "image_position": "left",
         "text_alignment": "left",
-        "first_desktop_image": "shopify://shop_images/20250822-170723.png",
-        "first_mobile_image": "shopify://shop_images/20250822-170723.png",
-        "heading": "About the bags",
+        "first_desktop_image": "{{ product.metafields.custom.image_1.value }}",
+        "first_mobile_image": "{{ product.metafields.custom.image_1.value }}",
+        "heading": "{{ product.metafields.custom.title_1.value }}",
         "subheading": "",
-        "text_content": "<p>The name Rains celebrates the basic element to which Rains products are designed to protect the wearer from: rain. </p>",
+        "text_content": "<p>{{ product.metafields.custom.content_1 | metafield_tag }}</p>",
         "button_label": "",
         "button_aria_label": "",
         "button_url": "/",
@@ -364,11 +364,11 @@
       "settings": {
         "image_position": "right",
         "text_alignment": "left",
-        "first_desktop_image": "shopify://shop_images/20250822-170728.png",
-        "first_mobile_image": "shopify://shop_images/20250822-170728.png",
-        "heading": "About the bags",
+        "first_desktop_image": "{{ product.metafields.custom.image_2.value }}",
+        "first_mobile_image": "{{ product.metafields.custom.image_2.value }}",
+        "heading": "{{ product.metafields.custom.title_2.value }}",
         "subheading": "",
-        "text_content": "<p>The name Rains celebrates the basic element to which Rains products are designed to protect the wearer from: rain. </p>",
+        "text_content": "<p>{{ product.metafields.custom.content_2 | metafield_tag }}</p>",
         "button_label": "",
         "button_aria_label": "",
         "button_url": "/",
@@ -389,11 +389,11 @@
       "settings": {
         "image_position": "left",
         "text_alignment": "left",
-        "first_desktop_image": "shopify://shop_images/20250822-170736.png",
-        "first_mobile_image": "shopify://shop_images/20250822-170736.png",
-        "heading": "About the bags",
+        "first_desktop_image": "{{ product.metafields.custom.image_3.value }}",
+        "first_mobile_image": "{{ product.metafields.custom.image_3.value }}",
+        "heading": "{{ product.metafields.custom.title_3.value }}",
         "subheading": "",
-        "text_content": "<p>The name Rains celebrates the basic element to which Rains products are designed to protect the wearer from: rain. </p>",
+        "text_content": "<p>{{ product.metafields.custom.content_3 | metafield_tag }}</p>",
         "button_label": "",
         "button_aria_label": "",
         "button_url": "/",

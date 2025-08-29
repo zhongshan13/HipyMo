@@ -101,12 +101,6 @@
             "collection": "cozybay"
           }
         },
-        "collection_3Ftbdw": {
-          "type": "collection",
-          "settings": {
-            "collection": "soulnest"
-          }
-        },
         "collection_tqG3N7": {
           "type": "collection",
           "settings": {
@@ -123,7 +117,6 @@
       },
       "block_order": [
         "collection_bzGK3e",
-        "collection_3Ftbdw",
         "collection_tqG3N7",
         "collection_gpFb6K"
       ],

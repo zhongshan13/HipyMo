@@ -15,13 +15,14 @@
         "image-1": {
           "type": "image",
           "settings": {
-            "image_desktop": "shopify://shop_images/20250820-152952.png",
+            "image_desktop": "shopify://shop_images/H-017_3115-1_PC_203abbec-ba11-4294-aef4-8261faf99dce.png",
+            "image_mobile": "shopify://shop_images/H-017_3115-1.png",
             "label": "",
             "heading": "Pack Small, Live Big",
             "description": "<p>Premium compressed sofas.</p><p>Easy to move,quick to set up, built for everyday comfort.</p>",
             "button_text": "SHOP NOW",
             "button_aria_label": "read more",
-            "button_link": "shopify://collections",
+            "button_link": "shopify://products/famora-couch",
             "open_in_new_tab": false,
             "make_link_full_slide": false,
             "second_button_text": "",
@@ -31,6 +32,7 @@
             "text_alignment_inside_block": "center",
             "content_layout": "center",
             "content_alignment": "slideshow__slide-content--center",
+            "just_content": "start",
             "background_color": "#757575",
             "background_content": "",
             "label_color": "#ffffff",
@@ -54,22 +56,24 @@
         "image-2": {
           "type": "image",
           "settings": {
-            "image_desktop": "shopify://shop_images/20250820-183109.png",
+            "image_desktop": "shopify://shop_images/20250829-162304.png",
+            "image_mobile": "shopify://shop_images/20250829-183333.png",
             "label": "",
             "heading": "Famora Couch",
-            "description": "<p>Experience theperfect blend of style, comfort, and practicalitywith our premium compressed sofa. </p>",
+            "description": "<p>Experience theperfect blend of style, comfort, </p><p>and practicalitywith our premium compressed sofa. </p>",
             "button_text": "SHOP NOW",
             "button_aria_label": "Read more",
-            "button_link": "shopify://collections/cozybay",
+            "button_link": "shopify://products/famora-couch",
             "open_in_new_tab": false,
             "make_link_full_slide": false,
             "second_button_text": "",
             "second_button_aria_label": "",
             "second_button_link": "/",
             "second_open_in_new_tab": false,
-            "text_alignment_inside_block": "center",
+            "text_alignment_inside_block": "left",
             "content_layout": "start",
-            "content_alignment": "slideshow__slide-content--center",
+            "content_alignment": "slideshow__slide-content--left",
+            "just_content": "start",
             "background_color": "#000000",
             "background_content": "",
             "label_color": "#ffffff",
@@ -93,13 +97,14 @@
         "image-3": {
           "type": "image",
           "settings": {
-            "image_desktop": "shopify://shop_images/20250820-152952.png",
+            "image_desktop": "shopify://shop_images/20250829-162711.png",
+            "image_mobile": "shopify://shop_images/20250829-182034.png",
             "label": "",
-            "heading": "Cloud Couch",
+            "heading": "Teddy Sofa",
             "description": "<p>Sink into plush cushions and enjoy timeless style with our premium compressed sofa. Bringing comfort and convenience straight to your home.</p>",
             "button_text": "SHOP NOW",
             "button_aria_label": "Read more",
-            "button_link": "/",
+            "button_link": "shopify://products/teddy-sofa",
             "open_in_new_tab": false,
             "make_link_full_slide": false,
             "second_button_text": "",
@@ -107,8 +112,9 @@
             "second_button_link": "/",
             "second_open_in_new_tab": false,
             "text_alignment_inside_block": "center",
-            "content_layout": "start",
+            "content_layout": "center",
             "content_alignment": "slideshow__slide-content--center",
+            "just_content": "start",
             "background_color": "#757575",
             "background_content": "",
             "label_color": "#ffffff",
@@ -170,21 +176,21 @@
           "type": "collection",
           "settings": {
             "collection": "cozybay",
-            "image": "shopify://shop_images/1_bf682a77-3e70-4ab6-9852-4053fc07ed9e.jpg"
+            "image": "shopify://shop_images/351-497-H-007_K2569-12.jpg"
           }
         },
         "collection_93nYWm": {
           "type": "collection",
           "settings": {
             "collection": "soulnest",
-            "image": "shopify://shop_images/2.jpg"
+            "image": "shopify://shop_images/351-497-H-050_K3207-2.jpg"
           }
         },
         "collection_list_3": {
           "type": "collection",
           "settings": {
             "collection": "ultra",
-            "image": "shopify://shop_images/3_c6ee95c5-b04a-47b2-91e3-fd844897f7b1.jpg"
+            "image": "shopify://shop_images/351-497_H-071_GODE_-01.jpg"
           }
         },
         "collection_list_4": {
@@ -248,7 +254,7 @@
         "product_list": [
           "cloud-couch",
           "famora-couch",
-          "pre-sale-007"
+          "teddy-sofa"
         ]
       }
     },
@@ -262,7 +268,7 @@
         "description": "",
         "product_list": [
           "famora-couch",
-          "pre-sale-007",
+          "teddy-sofa",
           "pre-sale-038",
           "052",
           "cloud-couch-off-white"
@@ -309,8 +315,8 @@
         "block_zwdU6x": {
           "type": "block",
           "settings": {
-            "image": "shopify://shop_images/06_48af15cb-f599-4691-887f-2c146970c99b.jpg",
-            "image_mobile": "shopify://shop_images/1_a9b2aa97-22b6-4965-acac-5749d517d4a9.png",
+            "image": "shopify://shop_images/1-1-H-027.jpg",
+            "image_mobile": "shopify://shop_images/1-1-H-027.jpg",
             "hub_heading": "About",
             "heading": "<p>CozyBay – Your Haven in Small Spaces</p>",
             "text": "<p>Designed for compact living, CozyBay brings warmth, comfort, and style into small apartments and cozy corners. “Cozy” reflects the inviting softness of home, while “Bay” symbolizes a safe harbor — a private, welcoming space where you can unwind, recharge, and truly feel at ease.</p>",
@@ -320,8 +326,8 @@
         "block_KLdQhd": {
           "type": "block",
           "settings": {
-            "image": "shopify://shop_images/02_2e1882ef-524b-4b16-bc81-22e3f51c4ad6.jpg",
-            "image_mobile": "shopify://shop_images/02_ae9f6dd8-6819-45bd-b3bd-2c677ac2dfd4.jpg",
+            "image": "shopify://shop_images/1-1-H-050_K3207-2.jpg",
+            "image_mobile": "shopify://shop_images/1-1-H-050_K3207-2.jpg",
             "hub_heading": "About",
             "heading": "<p>SoulNest-The Heart of Your Home </p>",
             "text": "<p>Crafted for everyday family living, SoulNest blends timeless style with inviting comfort.\"Soul\"represents the warmth and spirit of home, while \"Nest\"evokes a safe, nurturing space where memories are made. Perfect for regular living rooms, it's where comfort meets connection.</p>",
@@ -331,8 +337,8 @@
         "block_hBVKWY": {
           "type": "block",
           "settings": {
-            "image": "shopify://shop_images/21.png",
-            "image_mobile": "shopify://shop_images/21.png",
+            "image": "shopify://shop_images/1-1-H-038_3115-18.jpg",
+            "image_mobile": "shopify://shop_images/1-1-H-038_3115-18.jpg",
             "hub_heading": "About",
             "heading": "<p><strong>Ultra – Luxury Without Limits</strong></p>",
             "text": "<p>Designed for grand residences and refined interiors, Ultra embodies elegance, craftsmanship, and exceptional comfort. “Ultra” signifies going beyond the ordinary — delivering top-tier materials, meticulous detail, and a seating experience that defines sophistication. It’s the ultimate choice for those who demand the best.</p>",

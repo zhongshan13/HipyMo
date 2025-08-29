@@ -62,6 +62,7 @@
       "block_order": [
         "banner_block"
       ],
+      "disabled": true,
       "settings": {
         "section_background": "#222222",
         "label_color": "#ffffff",
@@ -126,6 +127,7 @@
         "benefits_1",
         "benefits_2"
       ],
+      "disabled": true,
       "settings": {
         "section_background": "#ffffff",
         "heading_color": "#000000",
@@ -142,6 +144,7 @@
     },
     "newsletter": {
       "type": "newsletter",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "if_laout": true,

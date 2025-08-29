@@ -52,6 +52,7 @@
     "color_slider_arrow_icon": "#000000",
     "color_slider_arrow_background_hover": "#000000",
     "color_slider_arrow_icon_hover": "#ffffff",
+    "favicon": "shopify://shop_images/1_5cc3e386-adc1-44b0-a882-82e2fc4e2d8f.svg",
     "container_width": "1400px",
     "color_label_secondary_background": "#ab9b81",
     "color_label_sold_out": "#FFFFFF",
@@ -73,9 +74,9 @@
     "product_card_button_border_color_hover": "rgba(0,0,0,0)",
     "is_strip_title": false,
     "quick_view_image_fit": "quick-view__image-wrapper--cover",
-    "social_twitter_link": "https://x.com/hipymosofa",
-    "social_pinterest_link": "https://www.pinterest.com/hipymosofa",
-    "social_youtube_link": "https://www.youtube.com/@hipymosofa",
+    "social_twitter_link": "https://x.com/hipymofurniture",
+    "social_pinterest_link": "https://www.pinterest.com/hipymofurniture/",
+    "social_youtube_link": "https://www.youtube.com/@hipymo-furniture",
     "social_tiktok_link": "https://www.tiktok.com/@hipymofurniture",
     "cookie_bar_background_color": "#000000",
     "cookie_bar_text_color": "#FFFFFF",
@@ -115,6 +116,11 @@
           "button_vertical_position": "highest",
           "greeting_message": "Hello! If you have any questions, feel free to send us a message. We’ll be happy to help!"
         }
+      },
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
       },
       "6174324309569838175": {
         "type": "shopify://apps/smile-io/blocks/smile-shopify-app/2fae4e25-1841-4ea2-bc02-bd548478c4f6",

@@ -53,10 +53,10 @@
         "text"
       ],
       "settings": {
-        "ante_use": "Termsof Use",
-        "ante_url": "/",
+        "ante_use": "Termsof Servie",
+        "ante_url": "shopify://pages/terms-of-service",
         "policy_text": "Privacy Policy",
-        "ante_url_2": "/",
+        "ante_url_2": "shopify://pages/privacy-policy",
         "logo_image_width": 250,
         "show_top_border": false,
         "copyright_text": "Copyright © %date%.",

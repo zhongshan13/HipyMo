@@ -61,22 +61,45 @@
         "faq-2",
         "faq-3"
       ],
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "label": "",
+        "heading": "FAQ",
+        "offset_top_desktop": 60,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 30,
+        "offset_bottom_mobile": 30
+      }
     },
     "benefits": {
       "type": "benefits",
       "blocks": {
         "benefits_item-0": {
           "type": "benefits_item",
-          "settings": {}
+          "settings": {
+            "heading": "Heading",
+            "text": "Benefit text",
+            "block_link": "",
+            "button_aria": ""
+          }
         },
         "benefits_item-1": {
           "type": "benefits_item",
-          "settings": {}
+          "settings": {
+            "heading": "Heading",
+            "text": "Benefit text",
+            "block_link": "",
+            "button_aria": ""
+          }
         },
         "benefits_item-2": {
           "type": "benefits_item",
-          "settings": {}
+          "settings": {
+            "heading": "Heading",
+            "text": "Benefit text",
+            "block_link": "",
+            "button_aria": ""
+          }
         }
       },
       "block_order": [
@@ -84,11 +107,14 @@
         "benefits_item-1",
         "benefits_item-2"
       ],
+      "disabled": true,
       "settings": {
         "section_background": "#ffffff",
         "heading_color": "#000000",
         "text_color": "#757575",
         "border_color": "#e6e6e6",
+        "outline_color": "#d2d2d2",
+        "full_width": true,
         "show_borders": true,
         "offset_top_desktop": 0,
         "offset_bottom_desktop": 0,
@@ -98,7 +124,10 @@
     },
     "newsletter": {
       "type": "newsletter",
+      "disabled": true,
       "settings": {
+        "full_width": false,
+        "if_laout": true,
         "layout": "one_column",
         "heading": "Newsletter",
         "subheading": "Subheading",
@@ -106,18 +135,263 @@
         "text": "<p>Be the first to know about new collections and exclusive offers</p>",
         "image_position": "left",
         "email_placeholder": "Your email",
-        "button_aria_label": "Submit"
+        "button_aria_label": "Submit",
+        "section_background": "#000000",
+        "heading_color": "#757575",
+        "text_color": "#ffffff",
+        "content_color": "#c1bdb9",
+        "input_label_color": "#c1bdb9",
+        "input_color": "#ffffff",
+        "input_border_color": "#c4c4c4",
+        "button_circle_text_color": "#f9f5f0",
+        "button_circle_background_color": "rgba(0,0,0,0)",
+        "button_circle_border_color": "#f9f5f0",
+        "button_circle_outer_border_color": "#8b8885",
+        "button_circle_text_color_hover": "#2c2a28",
+        "button_circle_background_color_hover": "#eab88c",
+        "button_circle_border_color_hover": "#eab88c",
+        "button_circle_outer_border_color_hover": "#8b8885",
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0
       }
     },
     "ticker": {
       "type": "ticker",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "text": "<p>Text in the ticker</p><p>Text in the ticker</p><p>Text in the ticker</p>",
+        "desktop_movement_speed": 20,
+        "mobile_movement_speed": 35,
+        "section_background": "#1B1B1B",
+        "text_color": "#ffffff",
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0
+      }
+    },
+    "faq_simple_GGy6ed": {
+      "type": "faq-simple",
+      "blocks": {
+        "category_R3Nf7h": {
+          "type": "category",
+          "settings": {
+            "heading": "Products & Purchasing"
+          }
+        },
+        "faq_item_e4QLza": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Are Hipymo compression sofas durable?",
+            "text": "<p>Yes. Built with <strong>high-rebound foam</strong>, <strong>quality upholstery</strong>, and durable stitching, Hipymo sofas are engineered for long-term use and maintain their shape and comfort through daily wear.</p>"
+          }
+        },
+        "faq_item_7HtcDw": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Who are compression sofas ideal for?",
+            "text": "<p>Hipymo compression sofas are perfect for:<br/>Urban apartment dwellers needing space-saving comfort<br/>Renters or students who move frequently<br/>Minimalists seeking stylish, easy-to-assemble furniture<br/>First-time homeowners desiring affordable yet premium seeating solutions</p>"
+          }
+        },
+        "faq_item_fpV4ac": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How do I clean and care for my Hipymo sofa?",
+            "text": "<p>Spot clean spills with a damp cloth and mild detergent. Vacuuum regularly and rotate modular<br/>sections to promote even wear. For OutdoorEase models, usea cover when not in use to protect<br/>from weather.</p>"
+          }
+        },
+        "faq_item_zEg9yh": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What makes compression sofas different from traditional ones?",
+            "text": "<p>Compression sofas are shipped compact for convenience and mobility, while traditional sofas are bulkier and often require professional delivery. Hipymo offers tool-free assembly, lightweight delivery, and modern design for flexible living spaces.</p>"
+          }
+        },
+        "faq_item_dL3QQ3": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How should I measure my space before buying?",
+            "text": "<p>Measure length, depth, and ceiling height to ensure your sofa fits through doorways and stairwells. Leave walking space around it. Armless or slim-profile designs help maximize room layout while maintaining comfort.</p>"
+          }
+        },
+        "category_9dDqth": {
+          "type": "category",
+          "settings": {
+            "heading": "Shipping & Delivery"
+          }
+        },
+        "faq_item_PmPyCk": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How long will shipping take?",
+            "text": "<p>In-stock items ship within 10 business days; pre-order items ship in 2–3 months.</p>"
+          }
+        },
+        "faq_item_MCxeTV": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Do you ship internationally?",
+            "text": "<p>Yes, we ship to multiple regions including North America via FedEx. We do not deliver to PO Boxes.</p>"
+          }
+        },
+        "faq_item_LkdgQh": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I change my delivery address after placing an order?",
+            "text": "<p>Address changes after shipment are not guaranteed and may incur additional fees or risks borne by the customer.</p>"
+          }
+        },
+        "faq_item_EJAhph": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What should I do if my package is delayed or cannot be delivered?",
+            "text": "<p>We are not responsible for delays due to incorrect information, recipient refusal, restricted areas, or force majeure events.</p>"
+          }
+        },
+        "faq_item_VVDpdt": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How can I track my order?",
+            "text": "<p>You will receive a tracking number via email or SMS once your order ships.</p>"
+          }
+        },
+        "category_hnp7i8": {
+          "type": "category",
+          "settings": {
+            "heading": "Receiving & Inspection"
+          }
+        },
+        "faq_item_83kPVB": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Should I inspect my order upon arrival?",
+            "text": "<p>Yes. Please check your package before signing. If damaged, do not sign or unpack, and contact us immediately.</p>"
+          }
+        },
+        "faq_item_7TxxwB": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Do I need to record an unboxing video?",
+            "text": "<p>We strongly recommend recording your unboxing to support any claims for damage or missing parts.</p>"
+          }
+        },
+        "category_344PxR": {
+          "type": "category",
+          "settings": {
+            "heading": "Returns & Exchanges"
+          }
+        },
+        "faq_item_yDgkta": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What is your return policy?",
+            "text": "<p>We offer a 15-day return policy. Items must be unused, unassembled, with tags, and in original packaging.</p>"
+          }
+        },
+        "faq_item_dPQYdA": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I return an opened product?",
+            "text": "<p>If the packaging has been opened, the item is generally not eligible for return unless defective.</p>"
+          }
+        },
+        "faq_item_Ahb9d9": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What about pre-order returns?",
+            "text": "<p>Pre-orders can be refunded within 7 days of purchase. After that, they are non-refundable and non-returnable.</p>"
+          }
+        },
+        "faq_item_Any3AR": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How do I start a return?",
+            "text": "<p>Contact <a>support@hipymo.com</a> for instructions and a return shipping label.</p>"
+          }
+        },
+        "faq_item_yNpn9K": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Who pays for return shipping?",
+            "text": "<p>If the product has no quality issues, the customer is responsible for the return shipping cost. If the product is defective or we sent the wrong item, Hipymo will cover the return shipping cost.</p>"
+          }
+        },
+        "faq_item_byxk4d": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "When will I receive my refund?",
+            "text": "<p>Refunds will be processed within 10 business days after the returned product arrives and passes our inspection. Please note that your bank or credit card provider may take additional time to post the amount.</p>"
+          }
+        },
+        "category_i3aTBp": {
+          "type": "category",
+          "settings": {
+            "heading": "After-Sales Support"
+          }
+        },
+        "faq_item_VViVTh": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What if my item arrives damaged or defective?",
+            "text": "<p>Inspect your order immediately and contact us within 24 hours with photos or videos.</p>"
+          }
+        },
+        "faq_item_Y3nDri": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I exchange my sofa for another model?",
+            "text": "<p>Yes. The fastest way is to return your item and purchase the desired model separately after the return is accepted.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_R3Nf7h",
+        "faq_item_e4QLza",
+        "faq_item_7HtcDw",
+        "faq_item_fpV4ac",
+        "faq_item_zEg9yh",
+        "faq_item_dL3QQ3",
+        "category_9dDqth",
+        "faq_item_PmPyCk",
+        "faq_item_MCxeTV",
+        "faq_item_LkdgQh",
+        "faq_item_EJAhph",
+        "faq_item_VVDpdt",
+        "category_hnp7i8",
+        "faq_item_83kPVB",
+        "faq_item_7TxxwB",
+        "category_344PxR",
+        "faq_item_yDgkta",
+        "faq_item_dPQYdA",
+        "faq_item_Ahb9d9",
+        "faq_item_Any3AR",
+        "faq_item_yNpn9K",
+        "faq_item_byxk4d",
+        "category_i3aTBp",
+        "faq_item_VViVTh",
+        "faq_item_Y3nDri"
+      ],
+      "name": "FAQs",
+      "settings": {
+        "label": "",
+        "heading": "FAQ",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "offset_top_desktop": 60,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 30,
+        "offset_bottom_mobile": 30
+      }
     }
   },
   "order": [
     "faq-page-template",
     "benefits",
     "newsletter",
-    "ticker"
+    "ticker",
+    "faq_simple_GGy6ed"
   ]
 }

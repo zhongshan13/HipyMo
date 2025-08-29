@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         adjustLeftWidth(swiper) {
             const firstSlide = swiper.slides[0];
-            const leftBox = document.querySelector('.ante-left');
+            const leftBox = this.parentElement.previousElementSibling;
 
 
             if (firstSlide && leftBox) {
@@ -150,12 +150,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         AnteSwiper() {
             const swiper = this.querySelector(".swiper")
-            const row = this.dataset.row
+            const row = Number(this.dataset.row) || 3;
             const _this = this
             const autoplay = this.hasAttribute("data-autoplay-true")
             const inautoplayTim = Number(this.dataset.autoplay) * 1000
-            console.log(inautoplayTim)
-            new Swiper(swiper, {
+            let lastWidth = window.innerWidth;
+            const myswiper = new Swiper(swiper, {
                 loop: true,
                 slidesPerView: row,
                 spaceBetween: 20,
@@ -188,7 +188,12 @@ document.addEventListener("DOMContentLoaded", function () {
                         _this.adjustLeftWidth(this);
                     },
                     resize: function () {
-                        _this.adjustLeftWidth(this);
+                        const newWidth = window.innerWidth;
+                        if (newWidth !== lastWidth) {
+                            lastWidth = newWidth;      // 更新记录
+                            this.update();             // 只在宽度真正变化时才触发
+                            _this.adjustLeftWidth(this);
+                        }   
                     }
                 }
             })
@@ -271,6 +276,8 @@ document.addEventListener("DOMContentLoaded", function () {
             this.swiper = new Swiper(swiper, {
                 loop: true,
                 slidesPerView: "auto",
+                // allowTouchMove: false,  // 禁用拖动
+                // simulateTouch: false,
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
@@ -342,6 +349,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
 
             }
+
         }
     }
 

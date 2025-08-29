@@ -62,20 +62,18 @@
             "badge_text": "",
             "badge_text_color": "#ffffff",
             "badge_background_color": "#cc0000",
-            "image": "shopify://shop_images/FUhaoduo0164_86d38542-d1a0-440c-a232-85cf71bd517e.webp",
             "label": "",
             "heading": "",
             "link": "/",
             "link_label": "",
             "media_rounded_corners": false,
-            "product1": "",
-            "image2": "shopify://shop_images/FUhaoduo0166_2bfb2714-06dd-4e20-a98e-f38c8018b1b3.webp",
+            "product1": "cloud-couch",
             "label2": "",
             "heading2": "",
             "link2": "/",
             "link_label2": "",
             "media_rounded_corners2": false,
-            "product2": ""
+            "product2": "famora-couch"
           }
         },
         "megamenu-images": {

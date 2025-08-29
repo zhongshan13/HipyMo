@@ -235,7 +235,7 @@ button.chat-toggle.chat-toggle--text-button {
     #MainContent .slideshow .slideshow__slide-content.slideshow__slide-content--left,
     .slideshow .slideshow__slide-content.slideshow__slide-content--center,
     #MainContent .slideshow .slideshow__slide-content.slideshow__slide-content--right {
-        max-width: 1440px;
+        max-width: 960px;
     }
 
     #MainContent .slideshow .slideshow__slide-description {
