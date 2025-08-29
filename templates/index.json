@@ -224,7 +224,7 @@
         "inside_the_image_text": "#f7f2ec",
         "inside_the_image_text_hover": "#000000",
         "full_width": false,
-        "offset_top_desktop": 100,
+        "offset_top_desktop": 50,
         "offset_bottom_desktop": 100,
         "offset_top_mobile": 60,
         "offset_bottom_mobile": 0
