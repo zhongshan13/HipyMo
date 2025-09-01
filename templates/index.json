@@ -1223,8 +1223,8 @@
         "button_circle_background_color_hover": "#eab88c",
         "button_circle_border_color_hover": "#eab88c",
         "button_circle_outer_border_color_hover": "#8b8885",
-        "offset_top_desktop": 100,
-        "offset_bottom_desktop": 100,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 40,
         "offset_top_mobile": 0,
         "offset_bottom_mobile": 0
       }
