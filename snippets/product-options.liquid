@@ -192,7 +192,8 @@
         Default options
       {%- endcomment -%}
       {%- capture other_options -%}
-				<div class="product-options__default-options">
+		{%- assign option_name = option.name | handle -%}
+				<div class="product-options__default-options  {% if option_name == 'warehouse' %} product-warehouse{% endif %}">
 					{%- if block.settings.show_labels or show_size_guide_in_label -%}
 						<div class="product-options__label-size-guide">
 							{%- assign option_name = option.name | handle -%}
@@ -238,6 +239,7 @@
 								<label
 									for="section-{{- section.id -}}-product-{{- product.id -}}-option-{{- handleized_option -}}-value-{{- handleized_value -}}"
 									class="radio__label {% if is_disabled %}is-disabled{% endif %}"
+									data-option="{{- value |  handleize -}}"
 								>
 									<span class="radio__label-text">
 									{%- if option_name == show_icon -%}

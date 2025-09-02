@@ -89,6 +89,7 @@
     "cart_reminder_color_text": "#FFFFFF",
     "cart_reminder_color_bg": "#000000",
     "is_newsletter_popup_enabled": true,
+    "newsletter_popup_text": "Subscribe to get exclusive discounts and the latest updates.",
     "newsletter_popup_desktop_image": "shopify://shop_images/FUhaoduo0476.webp",
     "newsletter_popup_mobile_image": "shopify://shop_images/3_c6ee95c5-b04a-47b2-91e3-fd844897f7b1.jpg",
     "is_newsletter_popup_show_socials": true,
@@ -117,18 +118,13 @@
           "greeting_message": "Hello! If you have any questions, feel free to send us a message. We’ll be happy to help!"
         }
       },
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
       "6174324309569838175": {
         "type": "shopify://apps/smile-io/blocks/smile-shopify-app/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
         "disabled": false,
         "settings": {}
       },
-      "13768625480086291342": {
-        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {}
       }

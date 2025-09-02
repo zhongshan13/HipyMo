@@ -1,0 +1,70 @@
+<style>
+  .ante-transit-box {
+    margin: 40px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+  }
+</style>
+<product-transit>
+  <script>
+    var transitInfo = [
+        {%- for value in product.metafields.custom.transit.value -%}
+        {%- if value != blank -%}
+       {
+
+          title:"{{ value.title | handleize }}",
+          time: "{{ value.time }}"
+       }
+        {%- if forloop.last == false -%},{%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    ];
+
+      console.log(transitInfo)
+      document.addEventListener("DOMContentLoaded", function() {
+        class AnteTransit extends HTMLElement {
+            connectedCallback() {
+                this.AnteTransit()
+            }
+            AnteTransit(){
+              const warehouse = this.parentElement.querySelector('.product-warehouse');
+              const warehouse_array = warehouse.querySelectorAll('.radio__option');
+              const box = this.querySelector('.ante-transit-time span');
+              warehouse_array.forEach((item,index)=>{
+                  item.addEventListener('click',function(e){
+                     for (let value of transitInfo){
+                       if(item.querySelector("label").dataset.option === value.title){
+                          box.innerHTML = value.time;
+                          break;
+                        }
+                     }
+                  })
+              })
+            }
+          }
+          if (!window.customElements.get('product-transit')) {
+            window.customElements.define('product-transit', AnteTransit);
+          }
+    });
+  </script>
+  <div class="ante-transit-box">
+    <div class="ante-transit-icon">
+      {%- assign icon = block.settings.icon -%}
+      {%- if icon != blank -%}
+        {{ icon | image_url: width:icon.width | image_tag: class: 'ante-transit-image' }}
+      {%- endif -%}
+    </div>
+    <div class="ante-transit-time">
+      <span>
+        {%- assign transit_data = product.metafields.custom.transit.value -%}
+        {%- for li in transit_data limit: 1 -%}
+          {%- if li != blank -%}
+            {{ li.time }}
+          {%- endif -%}
+        {%- endfor -%}
+      </span>
+    </div>
+  </div>
+</product-transit>
