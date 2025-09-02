@@ -42,6 +42,11 @@
                      }
                   })
               })
+              warehouse_array.forEach(item=>{
+                if(item.querySelector("input").checked){
+                  item.querySelector("input").click();
+                }
+              })
             }
           }
           if (!window.customElements.get('product-transit')) {

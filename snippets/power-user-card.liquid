@@ -1,0 +1,141 @@
+<style>
+  .ante-power {
+    opacity: 0;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+  }
+  .ante-power.active {
+    display: block;
+    z-index: 40;
+    opacity: 1;
+  }
+  .ante-power-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+  }
+
+  .ante-power-card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, opcacity 0.3s ease;
+  }
+  .power-user-card-box {
+    position: relative;
+    height: 100%;
+  }
+  .power-user-card-close {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+    padding: 10px;
+  }
+  .power-user-card-close svg {
+    cursor: pointer;
+  }
+  .power-user-info {
+    padding: 20px;
+  }
+</style>
+<div class="ante-power">
+  <div class="ante-power-bg">
+    <power-user-card class="ante-power-card">
+      <div class="power-user-card-box">
+        <div class="power-user-card-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+        <div class="power-user-info">
+          <div class="poer-user-content">
+            {{ settings.power_user_card_text }}
+          </div>
+        </div>
+      </div>
+    </power-user-card>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    class PowerUserCard extends HTMLElement {
+      connectedCallback() {
+        this.PowerUserCard();
+        this.Close();
+      }
+      PowerUserCard() {
+        var urlParams = new URLSearchParams(window.location.search);
+
+        if (urlParams.get('customer_posted') === 'true') {
+          const btn = document.querySelector('.newsletter-popup__close-icon-button');
+          if (btn) {
+          console.log(btn)
+            setTimeout(() => {
+              btn.click();
+            }, 1000);
+            setTimeout(() => {
+              this.Open();
+            }, 3000);
+          } else {
+            setTimeout(() => {
+              this.Open();
+            }, 3000);
+          }
+        }
+      }
+      Open() {
+        const box = document.querySelector('.ante-power');
+        box.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+      Close() {
+        const box = document.querySelector('.ante-power');
+        const close_btn = this.querySelector('.power-user-card-close svg');
+        const _this = this;
+
+        close_btn.addEventListener('click', function () {
+          box.classList.remove('active');
+          document.body.style.overflow = 'auto';
+        });
+
+        document.addEventListener('click', function (e) {
+          if (box.classList.contains('active')) {
+            if (!_this.contains(e.target)) {
+              box.classList.remove('active');
+            }
+          }
+        });
+      }
+    }
+
+    if (!window.customElements.get('power-user-card')) {
+      window.customElements.define('power-user-card', PowerUserCard);
+    }
+  });
+</script>

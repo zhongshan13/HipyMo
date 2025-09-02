@@ -52,6 +52,7 @@
     "color_slider_arrow_icon": "#000000",
     "color_slider_arrow_background_hover": "#000000",
     "color_slider_arrow_icon_hover": "#ffffff",
+    "is_power_user_card_enabled": false,
     "favicon": "shopify://shop_images/1_5cc3e386-adc1-44b0-a882-82e2fc4e2d8f.svg",
     "container_width": "1400px",
     "color_label_secondary_background": "#ab9b81",

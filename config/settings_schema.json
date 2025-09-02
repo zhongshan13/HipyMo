@@ -564,6 +564,24 @@
 		]
 	},
 	{
+		"name": "Power User Card",
+		"settings": [
+			{
+				"type": "checkbox",
+				"id": "is_power_user_card_enabled",
+				"label": "Enable Power User Card",
+				"default": false,
+				"info": "Power User Card is a card that appears in the bottom right corner of the screen. It contains links to important pages of the store, as well as social media links. [Learn more](https://utdweb.team/shopify-themes/gain/manual#general-power-user-card)"
+			},
+			{
+				"type": "richtext",
+				"id": "power_user_card_text",
+				"label": "Info",
+				"default": "<p>Welcome to our store! Here you can find the best products at the best prices. If you have any questions, feel free to contact us.</p>",
+			}
+		]
+	},
+	{
 		"name": "Favicon",
 		"settings": [
 			{

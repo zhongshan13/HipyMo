@@ -192,7 +192,7 @@
     {%- endunless -%}
 
     <link rel="stylesheet" href="{{ 'deferred-main.build.css' | asset_url }}">
-	  <link rel="stylesheet" href="{{ 'swiper-bundle.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'swiper-bundle.css' | asset_url }}">
     <link rel="stylesheet" href="{{ 'ante.css' | asset_url }}">
     {% render 'js-animate-observer' %}
 
@@ -219,7 +219,9 @@
       {% endcase %}
       <script src="{{- 'component-cart-reminder.build.min.js' | asset_url -}}" defer></script>
     {% endif %}
-
+    {%- if settings.is_power_user_card_enabled -%}
+      {%- render 'power-user-card' -%}
+    {%- endif -%}
     {% if settings.is_quick_view_enabled %}
       <script src="{{- 'component-video.build.min.js' | asset_url -}}" defer></script>
       <script src="{{- 'component-ar-model.build.min.js' | asset_url -}}" defer></script>
