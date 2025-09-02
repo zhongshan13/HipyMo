@@ -801,6 +801,15 @@
 				"info": "In order for the label to be displayed, the product needs to have a tag, like 'label_new'. [Learn more](https://utdweb.team/shopify-themes/gain/manual#general-product)"
 			},
 			{
+				"type": "header",
+				"content": "Shipping Model"
+			},
+			{
+				"type": "text",
+				"id": "shipping_model_text",
+				"label": "Shipping Model text"
+			},
+			{
 				"type": "checkbox",
 				"id": "is_sale_label_enabled",
 				"label": "Enable Sale % label",

@@ -193,7 +193,8 @@
       {%- endcomment -%}
       {%- capture other_options -%}
 		{%- assign option_name = option.name | handle -%}
-				<div class="product-options__default-options  {% if option_name == 'shipping-from' %} product-shipping{% endif %}">
+		{%- assign shipping_model_text = settings.shipping_model_text | handle -%}
+				<div class="product-options__default-options  {% if option_name == shipping_model_text %} product-shipping{% endif %}">
 					{%- if block.settings.show_labels or show_size_guide_in_label -%}
 						<div class="product-options__label-size-guide">
 							{%- assign option_name = option.name | handle -%}
