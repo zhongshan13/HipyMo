@@ -107,6 +107,12 @@
             "collection": "ultra"
           }
         },
+        "collection_hXK94z": {
+          "type": "collection",
+          "settings": {
+            "collection": "soulnest"
+          }
+        },
         "collection_gpFb6K": {
           "type": "collection",
           "disabled": true,
@@ -118,6 +124,7 @@
       "block_order": [
         "collection_bzGK3e",
         "collection_tqG3N7",
+        "collection_hXK94z",
         "collection_gpFb6K"
       ],
       "name": "Ante Collections",
