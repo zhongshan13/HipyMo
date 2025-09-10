@@ -1,3 +1,23 @@
+
+document.addEventListener("DOMContentLoaded", () => {
+    // 先保证 CN 永远显示
+    document.querySelectorAll('.product-shipping .radio__option[data-code="CN"]')
+        .forEach(el => el.style.display = "block");
+
+    // 获取用户 IP 国家
+    fetch("https://ipapi.co/json/")
+        .then(res => res.json())
+        .then(data => {
+            const countryCode = data.country_code;
+            console.log(countryCode)
+            // 显示对应国家变体
+            document.querySelectorAll(`.product-shipping .radio__option[data-code="${countryCode}"]`)
+                .forEach(el => el.style.display = "block");
+        })
+        .catch(err => console.error("获取IP失败", err));
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
     // 动画
     const lines = document.querySelectorAll('.line');
@@ -193,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             lastWidth = newWidth;      // 更新记录
                             this.update();             // 只在宽度真正变化时才触发
                             _this.adjustLeftWidth(this);
-                        }   
+                        }
                     }
                 }
             })
@@ -276,7 +296,7 @@ document.addEventListener("DOMContentLoaded", function () {
             this.swiper = new Swiper(swiper, {
                 loop: true,
                 slidesPerView: "auto",
-                // allowTouchMove: false,  // 禁用拖动
+                allowTouchMove: false,  // 禁用拖动
                 // simulateTouch: false,
                 pagination: {
                     el: '.swiper-pagination',
@@ -510,6 +530,156 @@ document.addEventListener("DOMContentLoaded", function () {
         window.customElements.define("ante-count", ANTECOUNT)
     }
 
+    // class ANTETSTN extends HTMLElement {
+    //     connectedCallback() {
+    //         this.AnteTstn()
+    //     }
+    //     AnteTstn() {
+    //         let MyIp;
+    //         const Ip = this.querySelectorAll(".radio__option")
+
+    //     }
+
+    // }
+
+    // if (!window.customElements.get("product-transportation")) {
+    //     window.customElements.define("product-transportation", ANTETSTN)
+    // }
+    class AnteThreeD extends HTMLElement {
+        constructor() {
+            super();
+            this.img = this.querySelector(".product-img");
+            this.viewer = this.querySelector(".viewer");
+            this.frameCount = 0; // 后面动态赋值
+            this.currentFrame = 0; // 0-based
+            this.isDragging = false;
+            this.startX = 0;
+            this.scriptEl;
+            this.arrayEl = [];
+        }
+
+        connectedCallback() {
+            this.arrayEl = this.Arraysort();
+            if (!this.arrayEl || this.arrayEl.length === 0) return;
+
+            this.frameCount = this.arrayEl.length;
+            this.currentFrame = 0; // 从第一张开始
+            this.LoadImg();
+            this.Execute();
+        }
+
+        Arraysort() {
+            this.scriptEl = this.querySelector('script[data-url]');
+            if (!this.scriptEl) return [];
+
+            const urls = JSON.parse(this.scriptEl.textContent);
+
+            // 按 index 排序
+            return urls.sort((a, b) => {
+                const aNum = parseInt(a.match(/index(\d+)/)[1], 10);
+                const bNum = parseInt(b.match(/index(\d+)/)[1], 10);
+                return aNum - bNum;
+            });
+        }
+
+        LoadImg() {
+            this.frames = [];
+            let loaded = 0;
+
+            this.arrayEl.forEach((url, i) => {
+                const img = new Image();
+                img.src = url;
+                img.onload = () => {
+                    loaded++;
+                    this.frames[i] = img;
+
+                    // 可选：加载完第一张就显示
+                    if (i === 0) {
+                        this.img.src = img.src;
+                    }
+                };
+            });
+        }
+
+        updateFrame(frameIndex) {
+            // frameIndex 从 0 到 frameCount-1
+            if (this.frames && this.frames[frameIndex]) {
+                this.img.src = this.frames[frameIndex].src;
+                this.img.srcset = this.frames[frameIndex].srcset;
+            }
+        }
+
+        Execute() {
+            let velocity = 0;
+            const friction = 0.95;
+
+            const animate = () => {
+                if (!this.isDragging) {
+                    if (Math.abs(velocity) > 0.2) {
+                        this.currentFrame = (this.currentFrame - Math.sign(velocity) + this.frameCount) % this.frameCount;
+                        this.updateFrame(this.currentFrame);
+                        velocity *= friction;
+                    } else {
+                        velocity = 0;
+                    }
+                }
+                requestAnimationFrame(animate);
+            };
+            animate();
+
+            this.viewer.addEventListener("mousedown", (e) => {
+                e.preventDefault();
+                this.isDragging = true;
+                this.startX = e.clientX;
+                velocity = 0;
+                this.viewer.style.cursor = "grabbing";
+            });
+
+            window.addEventListener("mouseup", () => {
+                this.isDragging = false;
+                this.viewer.style.cursor = "grab";
+            });
+
+            window.addEventListener("mousemove", (e) => {
+                if (!this.isDragging) return;
+                const delta = e.clientX - this.startX;
+                if (Math.abs(delta) > 3) {
+                    this.currentFrame = (this.currentFrame - Math.sign(delta) + this.frameCount) % this.frameCount;
+                    this.updateFrame(this.currentFrame);
+                    this.startX = e.clientX;
+                }
+                velocity = delta * 0.009;
+            });
+
+            // 移动端支持
+            this.viewer.addEventListener("touchstart", (e) => {
+                this.isDragging = true;
+                this.startX = e.touches[0].clientX;
+                velocity = 0;
+            });
+
+            this.viewer.addEventListener("touchend", () => {
+                this.isDragging = false;
+            });
+
+            this.viewer.addEventListener("touchmove", (e) => {
+                if (!this.isDragging) return;
+                const delta = e.touches[0].clientX - this.startX;
+                if (Math.abs(delta) > 2) {
+                    this.currentFrame = (this.currentFrame - Math.sign(delta) + this.frameCount) % this.frameCount;
+                    this.updateFrame(this.currentFrame);
+                    this.startX = e.touches[0].clientX;
+                }
+                velocity = delta * 0.009;
+            });
+        }
+    }
+
+
+
+    if (!window.customElements.get("ante-threed")) {
+        window.customElements.define("ante-threed", AnteThreeD);
+    }
     const product_arr = document.querySelectorAll('.accordion')
     if (product_arr.length > 0) {
         product_arr.forEach(element => {

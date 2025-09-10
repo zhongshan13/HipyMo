@@ -71,6 +71,22 @@
             "icon": "shopify://shop_images/1_742d3a38-a3dd-4ce6-a931-096fefa9ec44.svg"
           }
         },
+        "code_eGPecp": {
+          "type": "code",
+          "settings": {
+            "code_text": "HipyMo",
+            "title": "10%OFF",
+            "content": "<p>GET EXTRA<strong>10%OFF</strong></p>",
+            "end_time": "",
+            "code_color": "#ffffff",
+            "text_color": "#9d9992",
+            "bg_right_code_color": "#ffffff",
+            "color_strong": "#ab9b81",
+            "btn_color": "#979684",
+            "bg_color": "linear-gradient(90deg, rgba(188, 181, 150, 1), rgba(244, 243, 240, 1) 100%)",
+            "card_bg_color": "linear-gradient(180deg, rgba(171, 155, 129, 1), rgba(171, 155, 129, 1) 100%)"
+          }
+        },
         "judge_me_reviews_preview_badge_Wa3nA6": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
@@ -201,6 +217,7 @@
         "custom_liquid_yinLBk",
         "custom_field",
         "product_transit_time_giCekb",
+        "code_eGPecp",
         "judge_me_reviews_preview_badge_Wa3nA6",
         "inventory_status",
         "fold_H8EMrM",

@@ -73,7 +73,7 @@
     display: inline-block;
     border: none;
     opacity: 1;
-     color: rgb(var(--color-heading), 0.5);
+     color: {{- settings.color_text_heading -}}50;
   }
   .ante-Template .swiper-box-frist .swiper-pagination-bullet .bullet-text::before {
     content: '';
@@ -82,7 +82,7 @@
     bottom: -2px; /* 下划线位置 */
     height: 2px; /* 下划线高度 */
     width: 100%; /* 初始宽度 */
-    background-color: #999; /* 下划线颜色 */
+    background-color: {{- settings.color_text_heading -}}50; /* 下划线颜色 */
     transition: width 4s linear;
   }
   .ante-Template .swiper-box-frist .swiper-pagination-bullet .bullet-text::after {
@@ -92,7 +92,7 @@
     bottom: -2px; /* 下划线位置 */
     height: 2px; /* 下划线高度 */
     width: 0%; /* 初始宽度 */
-    background-color: #000; /* 下划线颜色 */
+    background-color: {{- settings.color_text_heading -}}; /* 下划线颜色 */
   }
   .ante-Template .swiper-box-frist .swiper-pagination-bullet.swiper-pagination-bullet-active .bullet-text::after {
     width: 100%; /* 激活时动画宽度100% */
@@ -108,7 +108,7 @@
     width: 0%;
     white-space: nowrap;
     overflow: hidden;
-    color: black;
+    color: {{- settings.color_text_heading -}};
     font-weight: 600;
     z-index: 2;
     /* 目标颜色 */
@@ -128,7 +128,7 @@
     .swiper-pagination-bullets
     .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: transparent;
-    color: #999;
+    color: {{- settings.color_text_heading -}}50;
   }
 
   .ante-Template .bullet-text {

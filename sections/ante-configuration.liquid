@@ -40,6 +40,29 @@
     height: 20px;
     width: auto;
   }
+  /* 让分页容器横向滚动 */
+  .ante-configuration .swiper-pagination {
+    display: flex;
+    overflow-x: auto; /* 横向滚动 */
+    overflow-y: hidden;
+    justify-content: center;
+    white-space: nowrap; /* 防止换行 */
+    padding: 5px 0;
+    -webkit-overflow-scrolling: touch; /* iOS 平滑滚动 */
+  }
+
+  /* 分页点保持原有尺寸，不挤压 */
+  .ante-configuration .swiper-bullet-img {
+    flex: 0 0 auto; /* 不缩放，保持宽度 */
+    margin-right: 8px; /* 点之间间距，可调 */
+  }
+
+  .ante-configuration .swiper-bullet-img img {
+    display: block;
+    width: auto; /* 保持图片比例 */
+    height: 30px; /* 固定高度 */
+  }
+
   .ante-configuration .swiper-bullet-img {
     display: inline-block;
     cursor: pointer;
@@ -61,8 +84,11 @@
   .ante-configuration .swiper {
     padding-bottom: 30px;
   }
-
-
+  @media (max-width: 1100px) {
+    .ante-configuration .swiper-pagination {
+      justify-content: start;
+    }
+  }
   @media (min-width: 768px) {
     .ante-temp .ante-temp__heading + .ante-temp__subheading {
       margin-top: 30px;
@@ -161,7 +187,29 @@
             {%- if product.metafields.custom.configuration_images.value != blank -%}
               {%- for img in product.metafields.custom.configuration_images.value -%}
                 <div class="swiper-slide">
-                  {{ img | image_url: width: img.width | image_tag: loading: 'lazy' }}
+                  <ante-threed>
+                    {%- assign group = 'group' | append: forloop.index -%}
+                    <script data-url>
+                      {%- capture urls -%}{%- endcapture -%}
+                      {%- for img_url in product.metafields.custom.configuration_images_group.value -%}
+                        {%- assign image_url = img_url | image_url: width: img.width -%}
+                        {%- if image_url contains group -%}
+                          {%- assign urls = urls | append: image_url | append: '||' -%}
+                        {%- endif -%}
+                      {%- endfor -%}
+                      {%- assign urls_array = urls | split: '||' -%}
+                      [
+                        {%- for u in urls_array -%}
+                           {%- if u != '' -%}
+                              "{{ u }}"{% unless forloop.last %},{% endunless %}
+                            {%- endif -%}
+                        {%- endfor -%}
+                      ]
+                    </script>
+                    <div class="viewer">
+                      {{ img | image_url: width: img.width | image_tag: loading: 'lazy', class: 'product-img' }}
+                    </div>
+                  </ante-threed>
                 </div>
               {%- endfor -%}
             {%- elsif section.blocks.size > 0 -%}

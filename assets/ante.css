@@ -165,17 +165,20 @@ button.chat-toggle.chat-toggle--text-button {
 
 #MainContent .slideshow .slideshow__slide-content {
     align-items: var(--layout-content);
-    padding: 0;
+    padding: 0 16px;
     justify-content: var(--justify-content);
     margin: auto;
 }
-#MainContent  .faq-simple :is(h3,.h3){
+
+#MainContent .faq-simple :is(h3, .h3) {
     font-size: 1.25rem;
 }
+
 #MainContent .slideshow__slide-content-inner {
     padding: 0;
     max-width: 780px;
 }
+
 
 .ante-footer__copyright {
     display: flex;
@@ -207,6 +210,32 @@ button.chat-toggle.chat-toggle--text-button {
     font-weight: 600;
 }
 
+
+.product-shipping .radio__option {
+    display: none;
+    /* 默认隐藏所有变体 */
+}
+
+.product .price__sale .price-item[data-price-old] {
+    font-size: 1.5rem;
+}
+
+.product-card .price__sale .price-item[data-price-old] {
+    font-size: .7rem;
+}
+
+@media (max-width:767px) {
+    .js-collection.collection .collection__body .collection__grid .collection__item {
+        width: 100%;
+    }
+    .collection__grid{
+        padding: 0 16px;
+    }
+}
+
+/* product-transportation .radio__option{
+    display: none; */
+/* } */
 @media (min-width: 1200px) {
     #MainContent :is(h1, .h1) {
         font-size: 46px;

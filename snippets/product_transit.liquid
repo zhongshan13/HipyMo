@@ -1,6 +1,6 @@
 <style>
   .ante-transit-box {
-    margin: 40px 0;
+    margin-bottom: 40px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -43,7 +43,7 @@
                     })
                 })
                 warehouse_array.forEach(item=>{
-                  if(item.querySelector("input").checked){
+                  if(item.getAttribute("data-code") == "CN"){
                     item.querySelector("input").click();
                   }
                 })

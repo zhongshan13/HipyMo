@@ -222,8 +222,24 @@
 									{%- break -%}
 								{%- endif -%}
 							{%- endfor -%}
-
-							<div class="radio__container radio__option {% if option_name == show_icon %} ante-icon_input {% endif %}">
+							{% comment %} {% assign country_code = request.headers['x-country-code'] %}
+							{{country_code}}
+							{%- assign country = localization.country.iso_code -%}
+							{%- liquid
+							  assign is_country =  false
+							  if option_name == shipping_model_text and country == value
+							  assign is_country =  true
+							  elsif option_name == shipping_model_text and value == "CN"
+							  assign is_country =  true
+							  endif
+							-%} {% endcomment %}
+							{% comment %} {{ country }} {% endcomment %}
+							  {% comment %} {% if is_country %}  ante-block {% endif %} {% endcomment %}
+							<div class="radio__container radio__option   {% if option_name == show_icon %} ante-icon_input {% endif %}"
+							{% if option_name == shipping_model_text %}
+								data-code="{{- value | escape -}}"
+							{% endif %}
+							>
 								<input
 									id="section-{{- section.id -}}-product-{{- product.id -}}-option-{{- handleized_option -}}-value-{{- handleized_value -}}"
 									type="radio"
@@ -248,7 +264,7 @@
 										{%- if variant.options contains value -%}
 											{%- if variant and variant.metafields.custom.icon != blank -%}
 													{%- assign img = variant.metafields.custom.icon.value -%}
-													{{ img |  image_url: height: "20px"|  image_tag: loading:"lazy"   }}
+													{{ img |  image_url: height: img.height |  image_tag: loading:"lazy"   }}
 												{%- else -%}
 													{{- value -}}
 												{%- endif -%}

@@ -8,53 +8,104 @@
  * ------------------------------------------------------------
  */
 {
-	"sections": {
-		"blog": {
-			"type": "blog-template",
-			"settings": {
-				"paginate_by": 9,
-				"pagination_type": "pagination",
-				"lazy_load_button_type": "secondary",
-				"show_filter_by_tag": true,
-				"featured_post_bg": "#fafafa",
-				"featured_post_border_color": "#e6e6e6",
-				"featured_post_text_color": "#000000",
-				"featured_post_date_color": "#757575",
-				"featured_show_border": false,
-				"enable_lazy_load": false,
-				"featured_blog_button_type": "secondary",
-				"btn_text_aria_label": "",
-				"offset_top_desktop": 60,
-				"offset_bottom_desktop": 60,
-				"offset_top_mobile": 40,
-				"offset_bottom_mobile": 40
-			}
-		},
-		"newsletter": {
-			"type": "newsletter",
-			"settings": {
-				"layout": "two_column",
-				"heading": "Newsletter",
-				"subheading": "THE LATEST PRODUCTS & OFFERS",
-				"success_message": "Thanks for subscribing",
-				"text": "<p>Be the first to know about new collections and exclusive offers</p>",
-				"image_position": "left",
-				"email_placeholder": "Your email",
-				"button_aria_label": "Submit",
-				"section_background": "#fafafa",
-				"heading_color": "#757575",
-				"text_color": "#000000",
-				"input_color": "#000000",
-				"input_border_color": "#c4c4c4",
-				"offset_top_desktop": 30,
-				"offset_bottom_desktop": 0,
-				"offset_top_mobile": 40,
-				"offset_bottom_mobile": 40
-			}
-		}
-	},
-	"order": [
-		"blog",
-		"newsletter"
-	]
+  "sections": {
+    "blog": {
+      "type": "blog-template",
+      "settings": {
+        "label": "",
+        "paginate_by": 9,
+        "pagination_type": "pagination",
+        "lazy_load_button_type": "secondary",
+        "show_filter_by_tag": true,
+        "featured_post": "",
+        "featured_post_bg": "#fafafa",
+        "featured_post_border_color": "#e6e6e6",
+        "featured_post_text_color": "#000000",
+        "featured_post_date_color": "#757575",
+        "featured_show_border": false,
+        "enable_lazy_load": false,
+        "featured_blog_button_type": "secondary",
+        "btn_text_aria_label": "",
+        "full_width": true,
+        "offset_top_desktop": 60,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 40,
+        "offset_bottom_mobile": 0
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "if_laout": true,
+        "layout": "two_column",
+        "heading": "Newsletter",
+        "subheading": "THE LATEST PRODUCTS & OFFERS",
+        "success_message": "Thanks for subscribing",
+        "text": "<p>Be the first to know about new collections and exclusive offers</p>",
+        "image_position": "left",
+        "email_placeholder": "Your email",
+        "button_aria_label": "Submit",
+        "section_background": "#fafafa",
+        "heading_color": "#757575",
+        "text_color": "#000000",
+        "content_color": "#c1bdb9",
+        "input_label_color": "#c1bdb9",
+        "input_color": "#000000",
+        "input_border_color": "#c4c4c4",
+        "button_circle_text_color": "#f9f5f0",
+        "button_circle_background_color": "rgba(0,0,0,0)",
+        "button_circle_border_color": "#f9f5f0",
+        "button_circle_outer_border_color": "#8b8885",
+        "button_circle_text_color_hover": "#2c2a28",
+        "button_circle_background_color_hover": "#eab88c",
+        "button_circle_border_color_hover": "#eab88c",
+        "button_circle_outer_border_color_hover": "#8b8885",
+        "offset_top_desktop": 30,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 40,
+        "offset_bottom_mobile": 40
+      }
+    },
+    "newsletter_JUKQtL": {
+      "type": "newsletter",
+      "settings": {
+        "full_width": false,
+        "if_laout": true,
+        "layout": "one_column",
+        "heading": "",
+        "subheading": "Subscribe to our emails",
+        "success_message": "Thanks for subscribing",
+        "text": "<p>Be the first to know about new collections and special offers</p>",
+        "image_position": "left",
+        "email_placeholder": "Your email",
+        "button_aria_label": "Submit",
+        "section_background": "#ffffff",
+        "heading_color": "#9d9992",
+        "text_color": "#ab9b81",
+        "content_color": "#c1bdb9",
+        "input_label_color": "#c1bdb9",
+        "input_color": "#9d9992",
+        "input_border_color": "#9d9992",
+        "button_circle_text_color": "#f9f5f0",
+        "button_circle_background_color": "rgba(0,0,0,0)",
+        "button_circle_border_color": "#f9f5f0",
+        "button_circle_outer_border_color": "#8b8885",
+        "button_circle_text_color_hover": "#2c2a28",
+        "button_circle_background_color_hover": "#eab88c",
+        "button_circle_border_color_hover": "#eab88c",
+        "button_circle_outer_border_color_hover": "#8b8885",
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 40,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "blog",
+    "newsletter",
+    "newsletter_JUKQtL"
+  ]
 }

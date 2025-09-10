@@ -60,6 +60,8 @@
             {% include 'product-title', design: design %}
           {% when 'fold' %}
             {% include 'product-fold', design: design %}
+          {% when 'code' %}
+            {% include 'product-code' %}
           {% when 'product_transit_time' %}
             {% include 'product_transit', design: design %}
           {% when 'description' %}

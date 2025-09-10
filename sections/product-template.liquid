@@ -664,12 +664,93 @@
           "label": "Title",
           "default": "Title"
         },
-		{
-		  "type": "richtext",
-		  "id": "text",
-		  "label": "Text",
-		  "default":"<p>Is text</p>"
-		}
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Is text</p>"
+        }
+      ]
+    },
+     {
+      "type": "code",
+      "name": "Code",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "code_text",
+          "label": "Code text",
+          "default": "%CODE%",
+          "info": "Use %CODE% to insert code into text"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "25% OFF",
+          "info": "Product code"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Content</p>",
+          "info": "Content"
+        },
+        {
+          "type": "text",
+          "id": "end_time",
+          "label": "End time",
+          "default": "2025-12-31T23:59:59",
+          "info": "Format: YYYY-MM-DDTHH:MM:SS"
+        },
+        {
+          "type": "header",
+          "content": "Color"
+        },
+        {
+          "type": "color",
+          "id": "code_color",
+          "label": "Code Color",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Color",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "bg_right_code_color",
+          "label": "Background Right Code Color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "color_strong",
+          "label": "Color Content Strong",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "btn_color",
+          "label": "Button Color",
+          "default": "#000000"
+        },
+        {
+          "type": "color_background",
+          "id": "bg_color",
+          "label": "Background Color",
+          "default": "linear-gradient(#ffffff, #000000)"
+        },
+         {
+          "type": "color_background",
+          "id": "card_bg_color",
+          "label": "Card Background Color",
+          "default": "linear-gradient(#ffffff, #000000)"
+        }
       ]
     },
     {
